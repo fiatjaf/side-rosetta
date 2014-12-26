@@ -1,0 +1,28 @@
+{
+	"ImportPath": "rosetta",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/cascadia",
+			"Comment": "null-31",
+			"Rev": "5d796540e3cb93ea0556c897e6a3c7690f614d35"
+		},
+		{
+			"ImportPath": "github.com/PuerkitoBio/goquery",
+			"Comment": "v0.3.2-66-g12a46cd",
+			"Rev": "12a46cd4a183cabd212b37144cf4df55454cf1b8"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "215affda49addc4c8ef7e2534915df2c8c35c6cd"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "e444e69cbd2e2e3e0749a2f3c717cec491552bbf"
+		},
+		{
+			"ImportPath": "golang.org/x/net/html",
+			"Rev": "8c5df243b6b387aeb4414824098c7630eca62cef"
+		}
+	]
+}
