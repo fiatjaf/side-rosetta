@@ -21,6 +21,11 @@
 			"Rev": "e444e69cbd2e2e3e0749a2f3c717cec491552bbf"
 		},
 		{
+			"ImportPath": "github.com/hoisie/mustache",
+			"Comment": "0.0.1-15-gaf524a1",
+			"Rev": "af524a16a1b1bd467c342969bf37db23433466c4"
+		},
+		{
 			"ImportPath": "golang.org/x/net/html",
 			"Rev": "8c5df243b6b387aeb4414824098c7630eca62cef"
 		}

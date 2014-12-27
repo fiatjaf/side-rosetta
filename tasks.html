@@ -1,0 +1,29 @@
+<script>
+$(function () {
+  $(".code-placeholder").each(function () {
+    $this = $(this)
+    $this.waypoint((function ($placeholder) {
+        return function (dir) {
+          $.ajax({
+            type: 'GET',
+            url: "/codeblock/{{Lang1}}/{{Lang2}}/" + $placeholder.data('task'),
+            success: function (html) {
+              $placeholder.before($placeholder.find('h3'))
+              $placeholder.replaceWith(html)
+            },
+            error: function () {
+              $placeholder.remove()
+              $placeholder.find('h3').remove()
+            }
+          })
+        }
+    })($this))
+  })
+})
+</script>
+
+{{#Tasks}}
+  <div class=code-placeholder data-task="{{Href}}">
+    <h3 class=code-title id={{Href}}><a href="#{{Href}}">{{Name}}</a></h3>
+  </div>
+{{/Tasks}}
