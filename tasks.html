@@ -4,6 +4,7 @@ $(function () {
     new Waypoint({
       element: this,
       continuous: false,
+      offset: 'bottom-in-view',
       handler: (function ($placeholder) {
         return function (dir) {
           $.ajax({
@@ -36,6 +37,11 @@ $(function () {
       })($(this))
     })
   })
+
+  if (location.hash.length < 2) {
+    location.hash = $('.code-placeholder h3').eq(0).attr('id')
+    setTimeout(function () {location.hash = ''}, 10)
+  }
 })
 </script>
 
