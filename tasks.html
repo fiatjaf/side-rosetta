@@ -1,12 +1,14 @@
 <script>
 $(function () {
   $(".code-placeholder").each(function () {
-    $this = $(this)
-    $this.waypoint((function ($placeholder) {
+    new Waypoint({
+      element: this,
+      continuous: false,
+      handler: (function ($placeholder) {
         return function (dir) {
           $.ajax({
             type: 'GET',
-            url: "/codeblock/{{Lang1}}/{{Lang2}}/" + $placeholder.data('task'),
+            url: "/codeblock/{{Lang1}}/{{Lang2}}/" + $placeholder.data('task') + "/",
             success: function (html) {
               $placeholder.before($placeholder.find('h3'))
               $placeholder.replaceWith(html)
@@ -14,10 +16,17 @@ $(function () {
             error: function () {
               $placeholder.remove()
               $placeholder.find('h3').remove()
+            },
+            complete: function () {
+              if (location.hash) {
+                var hash = location.hash
+                location.hash = hash
+              }
             }
           })
         }
-    })($this))
+      })($(this))
+    })
   })
 })
 </script>
