@@ -11,7 +11,15 @@ $(function () {
             url: "/codeblock/{{Lang1}}/{{Lang2}}/" + $placeholder.data('task') + "/",
             success: function (html) {
               $placeholder.before($placeholder.find('h3'))
-              $placeholder.replaceWith(html)
+              var codeblock = $(html)
+              $placeholder.replaceWith(codeblock)
+              codeblock.find('code').each(function (_, code) {
+                Prism.highlightElement(code)
+              })
+              var lang1 = '{{Lang1}}'[0].toUpperCase() + '{{Lang1}}'.substr(1)
+              var lang2 = '{{Lang2}}'[0].toUpperCase() + '{{Lang2}}'.substr(1)
+              codeblock.find('.code-lang1').prepend('<h4>' + lang1 + '</h4>')
+              codeblock.find('.code-lang2').prepend('<h4>' + lang2 + '</h4>')
             },
             error: function () {
               $placeholder.remove()

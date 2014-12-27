@@ -6,6 +6,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/gorilla/mux"
 	"github.com/hoisie/mustache"
+	"github.com/kennygrant/sanitize"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -54,6 +55,7 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 
 	lang1 := strings.ToLower(params["lang1"])
 	lang2 := strings.ToLower(params["lang2"])
+	lang := map[int]string{1: lang1, 2: lang2}
 	code := map[int]string{1: "", 2: ""}
 	matching := 0
 
@@ -74,7 +76,8 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 			if err != nil {
 				return true
 			}
-			code[matching] = code[matching] + "<pre>" + html + "</pre>"
+			html = sanitize.HTML(html)
+			code[matching] = code[matching] + "<pre><code class=\"language-" + lang[matching] + "\">" + html + "</code></pre>"
 		}
 		return true
 	})
