@@ -2,7 +2,7 @@
 .container { width: 850px; margin: auto; padding-top: 20px; }
 ul { list-style: none }
 li { float: left; padding: 10px; }
-button.lg { font-size: 120%; }
+.btn-lg { font-size: 130%; }
 h1 { text-align: center; }
 footer { width: 100%; text-align: center; background-color: wheat; padding-top: 20px; overflow: auto; }
 </style>
@@ -34,8 +34,14 @@ $(function () {
     var language = $this.text()
     var selectedPos = selected.indexOf(language)
     if (selectedPos != -1) {
-      selected.pop(selectedPos)
-      selected.unshift('___')
+      if (selectedPos == 0) {
+        selected.shift()
+        selected.unshift('___')
+      }
+      if (selectedPos == 1) {
+        selected.pop()
+        selected.push('___')
+      }
 
       $this.removeClass('active')
     } else {
@@ -43,7 +49,7 @@ $(function () {
       selected.unshift(language)
 
       $this.addClass('active')
-      $(prev).removeClass('active')
+      $("." + prev).removeClass('active')
     }
 
     update()
@@ -52,10 +58,10 @@ $(function () {
   function update() {
     $('.jumbotron').each(function () {
       $button = $(this).find('.btn')
-      $button.find('span').eq(0).text(selected[0])
-      $button.find('span').eq(1).text(selected[1])
+      $button.find('span').eq(0).text(selected[1])
+      $button.find('span').eq(1).text(selected[0])
       $button.focus()
-      $button.attr('href', '/compare/' + selected[0] + '/' + selected[1])
+      $button.attr('href', '/compare/' + selected[1] + '/' + selected[0])
     })
   }
 
