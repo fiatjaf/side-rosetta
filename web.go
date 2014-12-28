@@ -58,6 +58,9 @@ func languages(w http.ResponseWriter, req *http.Request) {
 		}
 	}
 
+	// cache this, please
+	w.Header().Set("Cache-control", "public; max-age=5184000")
+
 	headerBytes, _ := ioutil.ReadFile("header.html")
 	header := string(headerBytes)
 	fmt.Fprintf(w, header)
@@ -111,6 +114,9 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	// save code for this task in memcached
 	memcache.Set(taskName+"::"+langs[1], code[1], 0, 0, 1296000)
 	memcache.Set(taskName+"::"+langs[2], code[2], 0, 0, 1296000)
+
+	// cache this, please
+	w.Header().Set("Cache-control", "public; max-age=5184000")
 
 	context := Context{Lang1: code[1], Lang2: code[2]}
 	t, err := template.ParseFiles("codeblock.html")
