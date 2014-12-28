@@ -13,11 +13,11 @@ footer { width: 100%; text-align: center; background-color: wheat; padding-top: 
   </div>
   <div class="row">
     <ul>
-    {{#Languages}}
+    {{ range .Languages }}
       <li class="language">
-        <button class="btn btn-success {{.}}" href="#">{{.}}</button>
+        <button class="btn btn-success {{ . }}" href="#">{{ . }}</button>
       </li>
-    {{/Languages}}
+    {{ end }}
     </ul>
   </div>
   <div class="jumbotron">

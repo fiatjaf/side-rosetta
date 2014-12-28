@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"github.com/bmizerany/mc"
 	"github.com/gorilla/mux"
-	"github.com/hoisie/mustache"
 	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"strings"
+	"text/template"
 )
 
 func index(w http.ResponseWriter, req *http.Request) {
@@ -23,12 +23,16 @@ func index(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	context := Context{Languages: languages}
-	html := mustache.RenderFile("index.html", context)
-
 	headerBytes, _ := ioutil.ReadFile("header.html")
 	header := string(headerBytes)
-	fmt.Fprintf(w, header+"\n"+html)
+	fmt.Fprintf(w, header)
+
+	context := Context{Languages: languages}
+	t, err := template.ParseFiles("index.html")
+	if err != nil {
+		log.Print(err)
+	}
+	t.Execute(w, context)
 }
 
 func languages(w http.ResponseWriter, req *http.Request) {
@@ -54,12 +58,16 @@ func languages(w http.ResponseWriter, req *http.Request) {
 		}
 	}
 
-	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
-	html := mustache.RenderFile("tasks.html", context)
-
 	headerBytes, _ := ioutil.ReadFile("header.html")
 	header := string(headerBytes)
-	fmt.Fprintf(w, header+"\n"+html)
+	fmt.Fprintf(w, header)
+
+	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
+	t, err := template.ParseFiles("tasks.html")
+	if err != nil {
+		log.Print(err)
+	}
+	t.Execute(w, context)
 }
 
 func codeblocks(w http.ResponseWriter, req *http.Request) {
@@ -105,8 +113,11 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	memcache.Set(taskName+"::"+langs[2], code[2], 0, 0, 1296000)
 
 	context := Context{Lang1: code[1], Lang2: code[2]}
-	html := mustache.RenderFile("codeblock.html", context)
-	fmt.Fprintf(w, html)
+	t, err := template.ParseFiles("codeblock.html")
+	if err != nil {
+		log.Print(err)
+	}
+	t.Execute(w, context)
 }
 
 func redirectToSlash(w http.ResponseWriter, req *http.Request) {

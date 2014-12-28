@@ -28,7 +28,7 @@ $(function () {
         return function (dir) {
           $.ajax({
             type: 'GET',
-            url: "/codeblock/{{Lang1}}/{{Lang2}}/" + $placeholder.data('task') + "/",
+            url: "/codeblock/{{ .Lang1 }}/{{ .Lang2 }}/" + $placeholder.data('task') + "/",
             success: function (html) {
               $placeholder.before($placeholder.find('h3'))
               var codeblock = $(html)
@@ -36,8 +36,8 @@ $(function () {
               codeblock.find('code').each(function (_, code) {
                 Prism.highlightElement(code)
               })
-              var lang1 = '{{Lang1}}'[0].toUpperCase() + '{{Lang1}}'.substr(1)
-              var lang2 = '{{Lang2}}'[0].toUpperCase() + '{{Lang2}}'.substr(1)
+              var lang1 = '{{ .Lang1 }}'[0].toUpperCase() + '{{ .Lang1 }}'.substr(1)
+              var lang2 = '{{ .Lang2 }}'[0].toUpperCase() + '{{ .Lang2 }}'.substr(1)
               codeblock.find('.code-lang1').prepend('<h4>' + lang1 + '</h4>')
               codeblock.find('.code-lang2').prepend('<h4>' + lang2 + '</h4>')
             },
@@ -64,11 +64,11 @@ $(function () {
 })
 </script>
 
-{{#Tasks}}
-  <div class=code-placeholder data-task="{{Href}}">
-    <h3 class=code-title id={{Href}}>
-      <a href="#{{Href}}">{{Name}}</a>
-      <small><a href="http://rosettacode.org/wiki/{{Href}}" target="_blank">(see task description)</a></small>
+{{ range .Tasks }}
+  <div class=code-placeholder data-task="{{ .Href }}">
+    <h3 class=code-title id={{ .Href }}>
+      <a href="#{{ .Href }}">{{ .Name }}</a>
+      <small><a href="http://rosettacode.org/wiki/{{ .Href }}" target="_blank">(see task description)</a></small>
     </h3>
   </div>
-{{/Tasks}}
+{{ end }}
