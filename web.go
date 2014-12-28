@@ -3,10 +3,9 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/PuerkitoBio/goquery"
+	"github.com/bmizerany/mc"
 	"github.com/gorilla/mux"
 	"github.com/hoisie/mustache"
-	"github.com/kennygrant/sanitize"
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -36,13 +35,23 @@ func languages(w http.ResponseWriter, req *http.Request) {
 	params := mux.Vars(req)
 	log.Print(params)
 
-	var content []byte
-	content, _ = ioutil.ReadFile("tasks.json")
-	tasks := make([]map[string]string, 0)
-	if err := json.Unmarshal(content, &tasks); err != nil {
+	// try to get the list of suitable tasks from the live rosetta code page
+	langs := map[int]string{1: params["lang1"], 2: params["lang2"]}
+	tasks, err := TasksForLanguages(langs)
+	if err != nil {
 		log.Print(err)
-		http.Error(w, "internal json parsing error", 505)
+		http.Error(w, "these languages are probably fake", 406)
 		return
+	} else if len(tasks) == 0 {
+		// if nothing was found, return all
+		tasks := make([]map[string]string, 0)
+		var content []byte
+		content, _ = ioutil.ReadFile("tasks.json")
+		if err := json.Unmarshal(content, &tasks); err != nil {
+			log.Print(err)
+			http.Error(w, "internal json parsing error", 505)
+			return
+		}
 	}
 
 	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
@@ -58,51 +67,42 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	log.Print(params)
 	taskName := params["taskName"]
 
-	resp, err := http.Get("http://rosettacode.org/wiki/" + taskName)
-	if err != nil {
-		http.Error(w, "couldn't open rosetta code", 505)
-		return
-	}
-
-	doc, err := goquery.NewDocumentFromResponse(resp)
-	if err != nil {
-		http.Error(w, "couldn't parse rosetta code", 503)
-		return
-	}
-
 	lang1 := strings.ToLower(params["lang1"])
 	lang2 := strings.ToLower(params["lang2"])
-	lang := map[int]string{1: lang1, 2: lang2}
+	langs := map[int]string{1: lang1, 2: lang2}
 	code := map[int]string{1: "", 2: ""}
-	matching := 0
 
-	doc.Find("#mw-content-text h2, pre").EachWithBreak(func(i int, s *goquery.Selection) bool {
-		if s.Is("h2") {
-			lang := strings.ToLower(strings.Trim(s.Find("span.mw-headline").Text(), " "))
-			if lang == lang1 {
-				matching = 1
-			} else if lang == lang2 {
-				matching = 2
-			} else if len(code[1]) > 0 && len(code[2]) > 0 {
-				return false
-			} else {
-				matching = 0
+	// try to found the code in memcache
+	memcache, err := mc.Dial("tcp", os.Getenv("MEMCACHEDCLOUD_SERVERS"))
+	if err == nil {
+		err = memcache.Auth(os.Getenv("MEMCACHEDCLOUD_USERNAME"), os.Getenv("MEMCACHEDCLOUD_PASSWORD"))
+		if err == nil {
+			for i := 1; i <= 2; i++ {
+				html, _, _, err := memcache.Get(taskName + "::" + langs[i])
+				if err == nil && html != "" {
+					code[i] = "<pre><code class=\"language-" + langs[i] + "\">" + html + "</code></pre>"
+				}
 			}
-		} else if matching != 0 {
-			html, err := s.Html()
-			if err != nil {
-				return true
-			}
-			html = sanitize.HTML(html)
-			code[matching] = code[matching] + "<pre><code class=\"language-" + lang[matching] + "\">" + html + "</code></pre>"
 		}
-		return true
-	})
+	}
+
+	if len(code[1]) == 0 || len(code[2]) == 0 {
+		// nothing found on cache, search the html
+		code, err = CodeblockForTask(taskName, langs)
+		if err != nil {
+			http.Error(w, "couldn't parse rosetta code", 505)
+			return
+		}
+	}
 
 	if len(code[1]) == 0 || len(code[2]) == 0 {
 		http.Error(w, "code not found for these two languages", 404)
 		return
 	}
+
+	// save code for this task in memcached
+	memcache.Set(taskName+"::"+langs[1], code[1], 0, 0, 1296000)
+	memcache.Set(taskName+"::"+langs[2], code[2], 0, 0, 1296000)
 
 	context := Context{Lang1: code[1], Lang2: code[2]}
 	html := mustache.RenderFile("codeblock.html", context)

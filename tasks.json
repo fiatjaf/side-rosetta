@@ -1,199 +1,3046 @@
 [
-  {"Href": "Search_a_list", "Name": "Search a list"},
-  {"Href": "Secure_temporary_file", "Name": "Secure temporary file"},
-  {"Href": "SEDOLs", "Name": "SEDOLs"},
-  {"Href": "Self-describing_numbers", "Name": "Self-describing numbers"},
-  {"Href": "Self-referential_sequence", "Name": "Self-referential sequence"},
-  {"Href": "Semiprime", "Name": "Semiprime"},
-  {"Href": "Semordnilap", "Name": "Semordnilap"},
-  {"Href": "Send_an_unknown_method_call", "Name": "Send an unknown method call"},
-  {"Href": "Send_email", "Name": "Send email"},
-  {"Href": "Sequence_of_non-squares", "Name": "Sequence of non-squares"},
-  {"Href": "Sequence_of_primes_by_Trial_Division", "Name": "Sequence of primes by Trial Division"},
-  {"Href": "Set", "Name": "Set"},
-  {"Href": "Set_consolidation", "Name": "Set consolidation"},
-  {"Href": "Set_of_real_numbers", "Name": "Set of real numbers"},
-  {"Href": "Set_puzzle", "Name": "Set puzzle"},
-  {"Href": "Seven-sided_dice_from_five-sided_dice", "Name": "Seven-sided dice from five-sided dice"},
-  {"Href": "SHA-1", "Name": "SHA-1"},
-  {"Href": "SHA-256", "Name": "SHA-256"},
-  {"Href": "Shell_one-liner", "Name": "Shell one-liner"},
-  {"Href": "Short-circuit_evaluation", "Name": "Short-circuit evaluation"},
-  {"Href": "Show_the_epoch", "Name": "Show the epoch"},
-  {"Href": "Sierpinski_carpet", "Name": "Sierpinski carpet"},
-  {"Href": "Sierpinski_triangle", "Name": "Sierpinski triangle"},
-  {"Href": "Graphical", "Name": "Sierpinski triangle/Graphical"},
-  {"Href": "Sieve_of_Eratosthenes", "Name": "Sieve of Eratosthenes"},
-  {"Href": "Simple_database", "Name": "Simple database"},
-  {"Href": "Simple_windowed_application", "Name": "Simple windowed application"},
-  {"Href": "Keyboard", "Name": "Simulate input/Keyboard"},
-  {"Href": "Mouse", "Name": "Simulate input/Mouse"},
-  {"Href": "Singleton", "Name": "Singleton"},
-  {"Href": "Element_definition", "Name": "Singly-linked list/Element definition"},
-  {"Href": "Element_insertion", "Name": "Singly-linked list/Element insertion"},
-  {"Href": "Traversal", "Name": "Singly-linked list/Traversal"},
-  {"Href": "Sleep", "Name": "Sleep"},
-  {"Href": "SOAP", "Name": "SOAP"},
-  {"Href": "Sockets", "Name": "Sockets"},
-  {"Href": "Sokoban", "Name": "Sokoban"},
-  {"Href": "Solve_a_Hidato_puzzle", "Name": "Solve a Hidato puzzle"},
-  {"Href": "Solve_a_Holy_Knight's_tour", "Name": "Solve a Holy Knight's tour"},
-  {"Href": "Solve_a_Hopido_puzzle", "Name": "Solve a Hopido puzzle"},
-  {"Href": "Solve_a_Numbrix_puzzle", "Name": "Solve a Numbrix puzzle"},
-  {"Href": "Solve_the_no_connection_puzzle", "Name": "Solve the no connection puzzle"},
-  {"Href": "Sort_an_array_of_composite_structures", "Name": "Sort an array of composite structures"},
-  {"Href": "Sort_an_integer_array", "Name": "Sort an integer array"},
-  {"Href": "Sort_disjoint_sublist", "Name": "Sort disjoint sublist"},
-  {"Href": "Sort_stability", "Name": "Sort stability"},
-  {"Href": "Sort_using_a_custom_comparator", "Name": "Sort using a custom comparator"},
-  {"Href": "Bead_sort", "Name": "Sorting algorithms/Bead sort"},
-  {"Href": "Bogosort", "Name": "Sorting algorithms/Bogosort"},
-  {"Href": "Bubble_sort", "Name": "Sorting algorithms/Bubble sort"},
-  {"Href": "Cocktail_sort", "Name": "Sorting algorithms/Cocktail sort"},
-  {"Href": "Comb_sort", "Name": "Sorting algorithms/Comb sort"},
-  {"Href": "Counting_sort", "Name": "Sorting algorithms/Counting sort"},
-  {"Href": "Gnome_sort", "Name": "Sorting algorithms/Gnome sort"},
-  {"Href": "Heapsort", "Name": "Sorting algorithms/Heapsort"},
-  {"Href": "Insertion_sort", "Name": "Sorting algorithms/Insertion sort"},
-  {"Href": "Merge_sort", "Name": "Sorting algorithms/Merge sort"},
-  {"Href": "Pancake_sort", "Name": "Sorting algorithms/Pancake sort"},
-  {"Href": "Permutation_sort", "Name": "Sorting algorithms/Permutation sort"},
-  {"Href": "Quicksort", "Name": "Sorting algorithms/Quicksort"},
-  {"Href": "Radix_sort", "Name": "Sorting algorithms/Radix sort"},
-  {"Href": "Selection_sort", "Name": "Sorting algorithms/Selection sort"},
-  {"Href": "Shell_sort", "Name": "Sorting algorithms/Shell sort"},
-  {"Href": "Sleep_sort", "Name": "Sorting algorithms/Sleep sort"},
-  {"Href": "Stooge_sort", "Name": "Sorting algorithms/Stooge sort"},
-  {"Href": "Strand_sort", "Name": "Sorting algorithms/Strand sort"},
-  {"Href": "Soundex", "Name": "Soundex"},
-  {"Href": "Sparkline_in_unicode", "Name": "Sparkline in unicode"},
-  {"Href": "Special_characters", "Name": "Special characters"},
-  {"Href": "Special_variables", "Name": "Special variables"},
-  {"Href": "Speech_synthesis", "Name": "Speech synthesis"},
-  {"Href": "Spiral_matrix", "Name": "Spiral matrix"},
-  {"Href": "SQL-based_authentication", "Name": "SQL-based authentication"},
-  {"Href": "Stable_marriage_problem", "Name": "Stable marriage problem"},
-  {"Href": "Stack", "Name": "Stack"},
-  {"Href": "Stack_traces", "Name": "Stack traces"},
-  {"Href": "Stair-climbing_puzzle", "Name": "Stair-climbing puzzle"},
-  {"Href": "Standard_deviation", "Name": "Standard deviation"},
-  {"Href": "Start_from_a_main_routine", "Name": "Start from a main routine"},
-  {"Href": "State_name_puzzle", "Name": "State name puzzle"},
-  {"Href": "Basic", "Name": "Statistics/Basic"},
-  {"Href": "Stem-and-leaf_plot", "Name": "Stem-and-leaf plot"},
-  {"Href": "String_append", "Name": "String append"},
-  {"Href": "String_case", "Name": "String case"},
-  {"Href": "String_comparison", "Name": "String comparison"},
-  {"Href": "String_concatenation", "Name": "String concatenation"},
-  {"Href": "String_interpolation_(included)", "Name": "String interpolation (included)"},
-  {"Href": "String_length", "Name": "String length"},
-  {"Href": "String_matching", "Name": "String matching"},
-  {"Href": "String_prepend", "Name": "String prepend"},
-  {"Href": "Strip_a_set_of_characters_from_a_string", "Name": "Strip a set of characters from a string"},
-  {"Href": "Strip_block_comments", "Name": "Strip block comments"},
-  {"Href": "Strip_comments_from_a_string", "Name": "Strip comments from a string"},
-  {"Href": "Strip_control_codes_and_extended_characters_from_a_string", "Name": "Strip control codes and extended characters from a string"},
-  {"Href": "Top_and_tail", "Name": "Strip whitespace from a string/Top and tail"},
-  {"Href": "Substring", "Name": "Substring"},
-  {"Href": "Top_and_tail", "Name": "Substring/Top and tail"},
-  {"Href": "Subtractive_generator", "Name": "Subtractive generator"},
-  {"Href": "Sudoku", "Name": "Sudoku"},
-  {"Href": "Sum_and_product_of_an_array", "Name": "Sum and product of an array"},
-  {"Href": "Sum_digits_of_an_integer", "Name": "Sum digits of an integer"},
-  {"Href": "Sum_multiples_of_3_and_5", "Name": "Sum multiples of 3 and 5"},
-  {"Href": "Sum_of_a_series", "Name": "Sum of a series"},
-  {"Href": "Sum_of_squares", "Name": "Sum of squares"},
-  {"Href": "Sutherland-Hodgman_polygon_clipping", "Name": "Sutherland-Hodgman polygon clipping"},
-  {"Href": "Symmetric_difference", "Name": "Symmetric difference"},
-  {"Href": "Synchronous_concurrency", "Name": "Synchronous concurrency"},
-  {"Href": "System_time", "Name": "System time"},
-  {"Href": "Postal_addresses", "Name": "Table creation/Postal addresses"},
-  {"Href": "Take_notes_on_the_command_line", "Name": "Take notes on the command line"},
-  {"Href": "Temperature_conversion", "Name": "Temperature conversion"},
-  {"Href": "Clear_the_screen", "Name": "Terminal control/Clear the screen"},
-  {"Href": "Coloured_text", "Name": "Terminal control/Coloured text"},
-  {"Href": "Cursor_movement", "Name": "Terminal control/Cursor movement"},
-  {"Href": "Cursor_positioning", "Name": "Terminal control/Cursor positioning"},
-  {"Href": "Dimensions", "Name": "Terminal control/Dimensions"},
-  {"Href": "Display_an_extended_character", "Name": "Terminal control/Display an extended character"},
-  {"Href": "Hiding_the_cursor", "Name": "Terminal control/Hiding the cursor"},
-  {"Href": "Inverse_video", "Name": "Terminal control/Inverse video"},
-  {"Href": "Positional_read", "Name": "Terminal control/Positional read"},
-  {"Href": "Preserve_screen", "Name": "Terminal control/Preserve screen"},
-  {"Href": "Ringing_the_terminal_bell", "Name": "Terminal control/Ringing the terminal bell"},
-  {"Href": "Unicode_output", "Name": "Terminal control/Unicode output"},
-  {"Href": "Ternary_logic", "Name": "Ternary logic"},
-  {"Href": "Test_a_function", "Name": "Test a function"},
-  {"Href": "1", "Name": "Text processing/1"},
-  {"Href": "2", "Name": "Text processing/2"},
-  {"Href": "Max_licenses_in_use", "Name": "Text processing/Max licenses in use"},
-  {"Href": "The_ISAAC_Cipher", "Name": "The ISAAC Cipher"},
-  {"Href": "The_Twelve_Days_of_Christmas", "Name": "The Twelve Days of Christmas"},
-  {"Href": "Tic-tac-toe", "Name": "Tic-tac-toe"},
-  {"Href": "Time_a_function", "Name": "Time a function"},
-  {"Href": "Tokenize_a_string", "Name": "Tokenize a string"},
-  {"Href": "Top_rank_per_group", "Name": "Top rank per group"},
-  {"Href": "Topic_variable", "Name": "Topic variable"},
-  {"Href": "Topological_sort", "Name": "Topological sort"},
-  {"Href": "Topswops", "Name": "Topswops"},
-  {"Href": "Total_circles_area", "Name": "Total circles area"},
-  {"Href": "Towers_of_Hanoi", "Name": "Towers of Hanoi"},
-  {"Href": "Trabb_Pardo%E2%80%93Knuth_algorithm", "Name": "Trabb Pardo–Knuth algorithm"},
-  {"Href": "Tree_traversal", "Name": "Tree traversal"},
-  {"Href": "Trigonometric_functions", "Name": "Trigonometric functions"},
-  {"Href": "Truncatable_primes", "Name": "Truncatable primes"},
-  {"Href": "Truncate_a_file", "Name": "Truncate a file"},
-  {"Href": "Twelve_statements", "Name": "Twelve statements"},
-  {"Href": "Unbias_a_random_generator", "Name": "Unbias a random generator"},
-  {"Href": "Undefined_values", "Name": "Undefined values"},
-  {"Href": "Unicode_strings", "Name": "Unicode strings"},
-  {"Href": "Unicode_variable_names", "Name": "Unicode variable names"},
-  {"Href": "Universal_Turing_machine", "Name": "Universal Turing machine"},
-  {"Href": "ls", "Name": "Unix/ls"},
-  {"Href": "Update_a_configuration_file", "Name": "Update a configuration file"},
-  {"Href": "URL_decoding", "Name": "URL decoding"},
-  {"Href": "URL_encoding", "Name": "URL encoding"},
-  {"Href": "Use_another_language_to_call_a_function", "Name": "Use another language to call a function"},
-  {"Href": "Graphical", "Name": "User input/Graphical"},
-  {"Href": "Text", "Name": "User input/Text"},
-  {"Href": "Vampire_number", "Name": "Vampire number"},
-  {"Href": "Van_der_Corput_sequence", "Name": "Van der Corput sequence"},
-  {"Href": "Get", "Name": "Variable size/Get"},
-  {"Href": "Set", "Name": "Variable size/Set"},
-  {"Href": "Variable-length_quantity", "Name": "Variable-length quantity"},
-  {"Href": "Variables", "Name": "Variables"},
-  {"Href": "Variadic_function", "Name": "Variadic function"},
-  {"Href": "Vector_products", "Name": "Vector products"},
-  {"Href": "Chi-squared_test", "Name": "Verify distribution uniformity/Chi-squared test"},
-  {"Href": "Naive", "Name": "Verify distribution uniformity/Naive"},
-  {"Href": "Video_display_modes", "Name": "Video display modes"},
-  {"Href": "Vigen%C3%A8re_cipher", "Name": "Vigenère cipher"},
-  {"Href": "Cryptanalysis", "Name": "Vigenère cipher/Cryptanalysis"},
-  {"Href": "Visualize_a_tree", "Name": "Visualize a tree"},
-  {"Href": "Voronoi_diagram", "Name": "Voronoi diagram"},
-  {"Href": "Non-recursively", "Name": "Walk a directory/Non-recursively"},
-  {"Href": "Recursively", "Name": "Walk a directory/Recursively"},
-  {"Href": "Web_scraping", "Name": "Web scraping"},
-  {"Href": "Window_creation", "Name": "Window creation"},
-  {"Href": "X11", "Name": "Window creation/X11"},
-  {"Href": "Window_management", "Name": "Window management"},
-  {"Href": "Wireworld", "Name": "Wireworld"},
-  {"Href": "Word_wrap", "Name": "Word wrap"},
-  {"Href": "World_Cup_group_stage", "Name": "World Cup group stage"},
-  {"Href": "Write_float_arrays_to_a_text_file", "Name": "Write float arrays to a text file"},
-  {"Href": "Write_language_name_in_3D_ASCII", "Name": "Write language name in 3D ASCII"},
-  {"Href": "Write_to_Windows_event_log", "Name": "Write to Windows event log"},
-  {"Href": "DOM_serialization", "Name": "XML/DOM serialization"},
-  {"Href": "Input", "Name": "XML/Input"},
-  {"Href": "Output", "Name": "XML/Output"},
-  {"Href": "XPath", "Name": "XML/XPath"},
-  {"Href": "Y_combinator", "Name": "Y combinator"},
-  {"Href": "Yahoo!_search_interface", "Name": "Yahoo! search interface"},
-  {"Href": "Yin_and_yang", "Name": "Yin and yang"},
-  {"Href": "Zebra_puzzle", "Name": "Zebra puzzle"},
-  {"Href": "Zeckendorf_arithmetic", "Name": "Zeckendorf arithmetic"},
-  {"Href": "Zeckendorf_number_representation", "Name": "Zeckendorf number representation"},
-  {"Href": "Zero_to_the_zero_power", "Name": "Zero to the zero power"},
-  {"Href": "Zhang-Suen_thinning_algorithm", "Name": "Zhang-Suen thinning algorithm"},
-  {"Href": "Zig-zag_matrix", "Name": "Zig-zag matrix"}
+  {
+    "Href": "100_doors",
+    "Name": "100 doors"
+  },
+  {
+    "Href": "24_game",
+    "Name": "24 game"
+  },
+  {
+    "Href": "Solve",
+    "Name": "24 game/Solve"
+  },
+  {
+    "Href": "9_billion_names_of_God_the_integer",
+    "Name": "9 billion names of God the integer"
+  },
+  {
+    "Href": "99_Bottles_of_Beer",
+    "Name": "99 Bottles of Beer"
+  },
+  {
+    "Href": "A%2BB",
+    "Name": "A+B"
+  },
+  {
+    "Href": "ABC_Problem",
+    "Name": "ABC Problem"
+  },
+  {
+    "Href": "Abstract_type",
+    "Name": "Abstract type"
+  },
+  {
+    "Href": "Abundant,_deficient_and_perfect_number_classifications",
+    "Name": "Abundant, deficient and perfect number classifications"
+  },
+  {
+    "Href": "Accumulator_factory",
+    "Name": "Accumulator factory"
+  },
+  {
+    "Href": "Ackermann_function",
+    "Name": "Ackermann function"
+  },
+  {
+    "Href": "Connect",
+    "Name": "Active Directory/Connect"
+  },
+  {
+    "Href": "Search_for_a_user",
+    "Name": "Active Directory/Search for a user"
+  },
+  {
+    "Href": "Active_object",
+    "Name": "Active object"
+  },
+  {
+    "Href": "Add_a_variable_to_a_class_instance_at_runtime",
+    "Name": "Add a variable to a class instance at runtime"
+  },
+  {
+    "Href": "Address_of_a_variable",
+    "Name": "Address of a variable"
+  },
+  {
+    "Href": "AKS_test_for_primes",
+    "Name": "AKS test for primes"
+  },
+  {
+    "Href": "Align_columns",
+    "Name": "Align columns"
+  },
+  {
+    "Href": "Almost_prime",
+    "Name": "Almost prime"
+  },
+  {
+    "Href": "Amb",
+    "Name": "Amb"
+  },
+  {
+    "Href": "Amicable_pairs",
+    "Name": "Amicable pairs"
+  },
+  {
+    "Href": "Anagrams",
+    "Name": "Anagrams"
+  },
+  {
+    "Href": "Deranged_anagrams",
+    "Name": "Anagrams/Deranged anagrams"
+  },
+  {
+    "Href": "Animate_a_pendulum",
+    "Name": "Animate a pendulum"
+  },
+  {
+    "Href": "Animation",
+    "Name": "Animation"
+  },
+  {
+    "Href": "Anonymous_recursion",
+    "Name": "Anonymous recursion"
+  },
+  {
+    "Href": "Append_a_record_to_the_end_of_a_text_file",
+    "Name": "Append a record to the end of a text file"
+  },
+  {
+    "Href": "Apply_a_callback_to_an_array",
+    "Name": "Apply a callback to an array"
+  },
+  {
+    "Href": "Arbitrary-precision_integers_(included)",
+    "Name": "Arbitrary-precision integers (included)"
+  },
+  {
+    "Href": "Arena_storage_pool",
+    "Name": "Arena storage pool"
+  },
+  {
+    "Href": "Arithmetic_evaluation",
+    "Name": "Arithmetic evaluation"
+  },
+  {
+    "Href": "Arithmetic-geometric_mean",
+    "Name": "Arithmetic-geometric mean"
+  },
+  {
+    "Href": "Calculate_Pi",
+    "Name": "Arithmetic-geometric mean/Calculate Pi"
+  },
+  {
+    "Href": "Complex",
+    "Name": "Arithmetic/Complex"
+  },
+  {
+    "Href": "Integer",
+    "Name": "Arithmetic/Integer"
+  },
+  {
+    "Href": "Rational",
+    "Name": "Arithmetic/Rational"
+  },
+  {
+    "Href": "Array_concatenation",
+    "Name": "Array concatenation"
+  },
+  {
+    "Href": "Arrays",
+    "Name": "Arrays"
+  },
+  {
+    "Href": "Assertions",
+    "Name": "Assertions"
+  },
+  {
+    "Href": "Creation",
+    "Name": "Associative array/Creation"
+  },
+  {
+    "Href": "Iteration",
+    "Name": "Associative array/Iteration"
+  },
+  {
+    "Href": "Atomic_updates",
+    "Name": "Atomic updates"
+  },
+  {
+    "Href": "Average_loop_length",
+    "Name": "Average loop length"
+  },
+  {
+    "Href": "Arithmetic_mean",
+    "Name": "Averages/Arithmetic mean"
+  },
+  {
+    "Href": "Mean_angle",
+    "Name": "Averages/Mean angle"
+  },
+  {
+    "Href": "Mean_time_of_day",
+    "Name": "Averages/Mean time of day"
+  },
+  {
+    "Href": "Median",
+    "Name": "Averages/Median"
+  },
+  {
+    "Href": "Mode",
+    "Name": "Averages/Mode"
+  },
+  {
+    "Href": "Pythagorean_means",
+    "Name": "Averages/Pythagorean means"
+  },
+  {
+    "Href": "Root_mean_square",
+    "Name": "Averages/Root mean square"
+  },
+  {
+    "Href": "Simple_moving_average",
+    "Name": "Averages/Simple moving average"
+  },
+  {
+    "Href": "Balanced_brackets",
+    "Name": "Balanced brackets"
+  },
+  {
+    "Href": "Balanced_ternary",
+    "Name": "Balanced ternary"
+  },
+  {
+    "Href": "Benford%27s_law",
+    "Name": "Benford's law"
+  },
+  {
+    "Href": "Bernoulli_numbers",
+    "Name": "Bernoulli numbers"
+  },
+  {
+    "Href": "Best_shuffle",
+    "Name": "Best shuffle"
+  },
+  {
+    "Href": "Binary_digits",
+    "Name": "Binary digits"
+  },
+  {
+    "Href": "Binary_search",
+    "Name": "Binary search"
+  },
+  {
+    "Href": "Binary_strings",
+    "Name": "Binary strings"
+  },
+  {
+    "Href": "address_validation",
+    "Name": "Bitcoin/address validation"
+  },
+  {
+    "Href": "public_point_to_address",
+    "Name": "Bitcoin/public point to address"
+  },
+  {
+    "Href": "Bitmap",
+    "Name": "Bitmap"
+  },
+  {
+    "Href": "Bresenham%27s_line_algorithm",
+    "Name": "Bitmap/Bresenham's line algorithm"
+  },
+  {
+    "Href": "Cubic",
+    "Name": "Bitmap/Bézier curves/Cubic"
+  },
+  {
+    "Href": "Quadratic",
+    "Name": "Bitmap/Bézier curves/Quadratic"
+  },
+  {
+    "Href": "Flood_fill",
+    "Name": "Bitmap/Flood fill"
+  },
+  {
+    "Href": "Histogram",
+    "Name": "Bitmap/Histogram"
+  },
+  {
+    "Href": "Midpoint_circle_algorithm",
+    "Name": "Bitmap/Midpoint circle algorithm"
+  },
+  {
+    "Href": "PPM_conversion_through_a_pipe",
+    "Name": "Bitmap/PPM conversion through a pipe"
+  },
+  {
+    "Href": "Read_a_PPM_file",
+    "Name": "Bitmap/Read a PPM file"
+  },
+  {
+    "Href": "Read_an_image_through_a_pipe",
+    "Name": "Bitmap/Read an image through a pipe"
+  },
+  {
+    "Href": "Write_a_PPM_file",
+    "Name": "Bitmap/Write a PPM file"
+  },
+  {
+    "Href": "Bitwise_IO",
+    "Name": "Bitwise IO"
+  },
+  {
+    "Href": "Bitwise_operations",
+    "Name": "Bitwise operations"
+  },
+  {
+    "Href": "Boolean_values",
+    "Name": "Boolean values"
+  },
+  {
+    "Href": "Box_the_compass",
+    "Name": "Box the compass"
+  },
+  {
+    "Href": "Break_OO_privacy",
+    "Name": "Break OO privacy"
+  },
+  {
+    "Href": "Brownian_tree",
+    "Name": "Brownian tree"
+  },
+  {
+    "Href": "Bulls_and_cows",
+    "Name": "Bulls and cows"
+  },
+  {
+    "Href": "Player",
+    "Name": "Bulls and cows/Player"
+  },
+  {
+    "Href": "Caesar_cipher",
+    "Name": "Caesar cipher"
+  },
+  {
+    "Href": "Calendar",
+    "Name": "Calendar"
+  },
+  {
+    "Href": "Calendar_-_for_%22REAL%22_programmers",
+    "Name": "Calendar - for \"REAL\" programmers"
+  },
+  {
+    "Href": "Call_a_foreign-language_function",
+    "Name": "Call a foreign-language function"
+  },
+  {
+    "Href": "Call_a_function",
+    "Name": "Call a function"
+  },
+  {
+    "Href": "Call_a_function_in_a_shared_library",
+    "Name": "Call a function in a shared library"
+  },
+  {
+    "Href": "Call_an_object_method",
+    "Name": "Call an object method"
+  },
+  {
+    "Href": "Canny_edge_detector",
+    "Name": "Canny edge detector"
+  },
+  {
+    "Href": "Carmichael_3_strong_pseudoprimes",
+    "Name": "Carmichael 3 strong pseudoprimes"
+  },
+  {
+    "Href": "Case-sensitivity_of_identifiers",
+    "Name": "Case-sensitivity of identifiers"
+  },
+  {
+    "Href": "Casting_out_nines",
+    "Name": "Casting out nines"
+  },
+  {
+    "Href": "Catalan_numbers",
+    "Name": "Catalan numbers"
+  },
+  {
+    "Href": "Pascal%27s_triangle",
+    "Name": "Catalan numbers/Pascal's triangle"
+  },
+  {
+    "Href": "Catamorphism",
+    "Name": "Catamorphism"
+  },
+  {
+    "Href": "Catmull%E2%80%93Clark_subdivision_surface",
+    "Name": "Catmull–Clark subdivision surface"
+  },
+  {
+    "Href": "Character_codes",
+    "Name": "Character codes"
+  },
+  {
+    "Href": "Chat_server",
+    "Name": "Chat server"
+  },
+  {
+    "Href": "Check_Machin-like_formulas",
+    "Name": "Check Machin-like formulas"
+  },
+  {
+    "Href": "Check_that_file_exists",
+    "Name": "Check that file exists"
+  },
+  {
+    "Href": "Checkpoint_synchronization",
+    "Name": "Checkpoint synchronization"
+  },
+  {
+    "Href": "Chinese_remainder_theorem",
+    "Name": "Chinese remainder theorem"
+  },
+  {
+    "Href": "Cholesky_decomposition",
+    "Name": "Cholesky decomposition"
+  },
+  {
+    "Href": "Circles_of_given_radius_through_two_points",
+    "Name": "Circles of given radius through two points"
+  },
+  {
+    "Href": "Classes",
+    "Name": "Classes"
+  },
+  {
+    "Href": "Closest-pair_problem",
+    "Name": "Closest-pair problem"
+  },
+  {
+    "Href": "Value_capture",
+    "Name": "Closures/Value capture"
+  },
+  {
+    "Href": "Collections",
+    "Name": "Collections"
+  },
+  {
+    "Href": "Color_of_a_screen_pixel",
+    "Name": "Color of a screen pixel"
+  },
+  {
+    "Href": "Color_quantization",
+    "Name": "Color quantization"
+  },
+  {
+    "Href": "Display",
+    "Name": "Colour bars/Display"
+  },
+  {
+    "Href": "Display",
+    "Name": "Colour pinstripe/Display"
+  },
+  {
+    "Href": "Printer",
+    "Name": "Colour pinstripe/Printer"
+  },
+  {
+    "Href": "Combinations",
+    "Name": "Combinations"
+  },
+  {
+    "Href": "Combinations_and_permutations",
+    "Name": "Combinations and permutations"
+  },
+  {
+    "Href": "Combinations_with_repetitions",
+    "Name": "Combinations with repetitions"
+  },
+  {
+    "Href": "Comma_quibbling",
+    "Name": "Comma quibbling"
+  },
+  {
+    "Href": "Command-line_arguments",
+    "Name": "Command-line arguments"
+  },
+  {
+    "Href": "Comments",
+    "Name": "Comments"
+  },
+  {
+    "Href": "Compare_sorting_algorithms%27_performance",
+    "Name": "Compare sorting algorithms' performance"
+  },
+  {
+    "Href": "Compile-time_calculation",
+    "Name": "Compile-time calculation"
+  },
+  {
+    "Href": "Compound_data_type",
+    "Name": "Compound data type"
+  },
+  {
+    "Href": "Concurrent_computing",
+    "Name": "Concurrent computing"
+  },
+  {
+    "Href": "Conditional_structures",
+    "Name": "Conditional structures"
+  },
+  {
+    "Href": "Conjugate_transpose",
+    "Name": "Conjugate transpose"
+  },
+  {
+    "Href": "Constrained_genericity",
+    "Name": "Constrained genericity"
+  },
+  {
+    "Href": "Constrained_random_points_on_a_circle",
+    "Name": "Constrained random points on a circle"
+  },
+  {
+    "Href": "Continued_fraction",
+    "Name": "Continued fraction"
+  },
+  {
+    "Href": "Construct_from_rational_number",
+    "Name": "Continued fraction/Arithmetic/Construct from rational number"
+  },
+  {
+    "Href": "G(matrix_NG,_Contined_Fraction_N)",
+    "Name": "Continued fraction/Arithmetic/G(matrix NG, Contined Fraction N)"
+  },
+  {
+    "Href": "G(matrix_NG,_Contined_Fraction_N1,_Contined_Fraction_N2)",
+    "Name": "Continued fraction/Arithmetic/G(matrix NG, Contined Fraction N1, Contined Fraction N2)"
+  },
+  {
+    "Href": "Convert_decimal_number_to_rational",
+    "Name": "Convert decimal number to rational"
+  },
+  {
+    "Href": "Conway%27s_Game_of_Life",
+    "Name": "Conway's Game of Life"
+  },
+  {
+    "Href": "Copy_a_string",
+    "Name": "Copy a string"
+  },
+  {
+    "Href": "Count_in_factors",
+    "Name": "Count in factors"
+  },
+  {
+    "Href": "Count_in_octal",
+    "Name": "Count in octal"
+  },
+  {
+    "Href": "Count_occurrences_of_a_substring",
+    "Name": "Count occurrences of a substring"
+  },
+  {
+    "Href": "Count_the_coins",
+    "Name": "Count the coins"
+  },
+  {
+    "Href": "CRC-32",
+    "Name": "CRC-32"
+  },
+  {
+    "Href": "Create_a_file",
+    "Name": "Create a file"
+  },
+  {
+    "Href": "Create_a_file_on_magnetic_tape",
+    "Name": "Create a file on magnetic tape"
+  },
+  {
+    "Href": "Create_a_two-dimensional_array_at_runtime",
+    "Name": "Create a two-dimensional array at runtime"
+  },
+  {
+    "Href": "Create_an_HTML_table",
+    "Name": "Create an HTML table"
+  },
+  {
+    "Href": "Create_an_object_at_a_given_address",
+    "Name": "Create an object at a given address"
+  },
+  {
+    "Href": "CSV_data_manipulation",
+    "Name": "CSV data manipulation"
+  },
+  {
+    "Href": "CSV_to_HTML_translation",
+    "Name": "CSV to HTML translation"
+  },
+  {
+    "Href": "Currying",
+    "Name": "Currying"
+  },
+  {
+    "Href": "Cut_a_rectangle",
+    "Name": "Cut a rectangle"
+  },
+  {
+    "Href": "Date_format",
+    "Name": "Date format"
+  },
+  {
+    "Href": "Date_manipulation",
+    "Name": "Date manipulation"
+  },
+  {
+    "Href": "Day_of_the_week",
+    "Name": "Day of the week"
+  },
+  {
+    "Href": "Deal_cards_for_FreeCell",
+    "Name": "Deal cards for FreeCell"
+  },
+  {
+    "Href": "Death_Star",
+    "Name": "Death Star"
+  },
+  {
+    "Href": "1D",
+    "Name": "Deconvolution/1D"
+  },
+  {
+    "Href": "2D%2B",
+    "Name": "Deconvolution/2D+"
+  },
+  {
+    "Href": "Deepcopy",
+    "Name": "Deepcopy"
+  },
+  {
+    "Href": "Define_a_primitive_data_type",
+    "Name": "Define a primitive data type"
+  },
+  {
+    "Href": "Delegates",
+    "Name": "Delegates"
+  },
+  {
+    "Href": "Delete_a_file",
+    "Name": "Delete a file"
+  },
+  {
+    "Href": "Detect_division_by_zero",
+    "Name": "Detect division by zero"
+  },
+  {
+    "Href": "Determine_if_a_string_is_numeric",
+    "Name": "Determine if a string is numeric"
+  },
+  {
+    "Href": "Determine_if_only_one_instance_is_running",
+    "Name": "Determine if only one instance is running"
+  },
+  {
+    "Href": "Digital_root",
+    "Name": "Digital root"
+  },
+  {
+    "Href": "Multiplicative_digital_root",
+    "Name": "Digital root/Multiplicative digital root"
+  },
+  {
+    "Href": "Dinesman%27s_multiple-dwelling_problem",
+    "Name": "Dinesman's multiple-dwelling problem"
+  },
+  {
+    "Href": "Dining_philosophers",
+    "Name": "Dining philosophers"
+  },
+  {
+    "Href": "Discordian_date",
+    "Name": "Discordian date"
+  },
+  {
+    "Href": "Distributed_programming",
+    "Name": "Distributed programming"
+  },
+  {
+    "Href": "DNS_query",
+    "Name": "DNS query"
+  },
+  {
+    "Href": "Documentation",
+    "Name": "Documentation"
+  },
+  {
+    "Href": "Dot_product",
+    "Name": "Dot product"
+  },
+  {
+    "Href": "Definition",
+    "Name": "Doubly-linked list/Definition"
+  },
+  {
+    "Href": "Element_definition",
+    "Name": "Doubly-linked list/Element definition"
+  },
+  {
+    "Href": "Element_insertion",
+    "Name": "Doubly-linked list/Element insertion"
+  },
+  {
+    "Href": "Traversal",
+    "Name": "Doubly-linked list/Traversal"
+  },
+  {
+    "Href": "Dragon_curve",
+    "Name": "Dragon curve"
+  },
+  {
+    "Href": "Draw_a_clock",
+    "Name": "Draw a clock"
+  },
+  {
+    "Href": "Draw_a_cuboid",
+    "Name": "Draw a cuboid"
+  },
+  {
+    "Href": "Draw_a_sphere",
+    "Name": "Draw a sphere"
+  },
+  {
+    "Href": "Dutch_national_flag_problem",
+    "Name": "Dutch national flag problem"
+  },
+  {
+    "Href": "Dynamic_variable_names",
+    "Name": "Dynamic variable names"
+  },
+  {
+    "Href": "Echo_server",
+    "Name": "Echo server"
+  },
+  {
+    "Href": "Element-wise_operations",
+    "Name": "Element-wise operations"
+  },
+  {
+    "Href": "Empty_directory",
+    "Name": "Empty directory"
+  },
+  {
+    "Href": "Empty_program",
+    "Name": "Empty program"
+  },
+  {
+    "Href": "Empty_string",
+    "Name": "Empty string"
+  },
+  {
+    "Href": "Enforced_immutability",
+    "Name": "Enforced immutability"
+  },
+  {
+    "Href": "Entropy",
+    "Name": "Entropy"
+  },
+  {
+    "Href": "Enumerations",
+    "Name": "Enumerations"
+  },
+  {
+    "Href": "Environment_variables",
+    "Name": "Environment variables"
+  },
+  {
+    "Href": "Equilibrium_index",
+    "Name": "Equilibrium index"
+  },
+  {
+    "Href": "Ethiopian_multiplication",
+    "Name": "Ethiopian multiplication"
+  },
+  {
+    "Href": "Euler_method",
+    "Name": "Euler method"
+  },
+  {
+    "Href": "Evaluate_binomial_coefficients",
+    "Name": "Evaluate binomial coefficients"
+  },
+  {
+    "Href": "Even_or_odd",
+    "Name": "Even or odd"
+  },
+  {
+    "Href": "Events",
+    "Name": "Events"
+  },
+  {
+    "Href": "Evolutionary_algorithm",
+    "Name": "Evolutionary algorithm"
+  },
+  {
+    "Href": "Exceptions",
+    "Name": "Exceptions"
+  },
+  {
+    "Href": "Catch_an_exception_thrown_in_a_nested_call",
+    "Name": "Exceptions/Catch an exception thrown in a nested call"
+  },
+  {
+    "Href": "Executable_library",
+    "Name": "Executable library"
+  },
+  {
+    "Href": "Execute_a_Markov_algorithm",
+    "Name": "Execute a Markov algorithm"
+  },
+  {
+    "Href": "Execute_a_system_command",
+    "Name": "Execute a system command"
+  },
+  {
+    "Href": "Execute_Brain****",
+    "Name": "Execute Brain****"
+  },
+  {
+    "Href": "Execute_HQ9%2B",
+    "Name": "Execute HQ9+"
+  },
+  {
+    "Href": "Execute_SNUSP",
+    "Name": "Execute SNUSP"
+  },
+  {
+    "Href": "Exponentiation_operator",
+    "Name": "Exponentiation operator"
+  },
+  {
+    "Href": "Extend_your_language",
+    "Name": "Extend your language"
+  },
+  {
+    "Href": "Extensible_prime_generator",
+    "Name": "Extensible prime generator"
+  },
+  {
+    "Href": "Extreme_floating_point_values",
+    "Name": "Extreme floating point values"
+  },
+  {
+    "Href": "Factorial",
+    "Name": "Factorial"
+  },
+  {
+    "Href": "Factors_of_a_Mersenne_number",
+    "Name": "Factors of a Mersenne number"
+  },
+  {
+    "Href": "Factors_of_an_integer",
+    "Name": "Factors of an integer"
+  },
+  {
+    "Href": "Fast_Fourier_transform",
+    "Name": "Fast Fourier transform"
+  },
+  {
+    "Href": "Fibonacci_n-step_number_sequences",
+    "Name": "Fibonacci n-step number sequences"
+  },
+  {
+    "Href": "Fibonacci_sequence",
+    "Name": "Fibonacci sequence"
+  },
+  {
+    "Href": "Fibonacci_word",
+    "Name": "Fibonacci word"
+  },
+  {
+    "Href": "fractal",
+    "Name": "Fibonacci word/fractal"
+  },
+  {
+    "Href": "output",
+    "Name": "File input/output"
+  },
+  {
+    "Href": "File_modification_time",
+    "Name": "File modification time"
+  },
+  {
+    "Href": "File_size",
+    "Name": "File size"
+  },
+  {
+    "Href": "Filter",
+    "Name": "Filter"
+  },
+  {
+    "Href": "Find_common_directory_path",
+    "Name": "Find common directory path"
+  },
+  {
+    "Href": "Find_largest_left_truncatable_prime_in_a_given_base",
+    "Name": "Find largest left truncatable prime in a given base"
+  },
+  {
+    "Href": "Find_limit_of_recursion",
+    "Name": "Find limit of recursion"
+  },
+  {
+    "Href": "Find_the_last_Sunday_of_each_month",
+    "Name": "Find the last Sunday of each month"
+  },
+  {
+    "Href": "Find_the_missing_permutation",
+    "Name": "Find the missing permutation"
+  },
+  {
+    "Href": "First_class_environments",
+    "Name": "First class environments"
+  },
+  {
+    "Href": "First-class_functions",
+    "Name": "First-class functions"
+  },
+  {
+    "Href": "Use_numbers_analogously",
+    "Name": "First-class functions/Use numbers analogously"
+  },
+  {
+    "Href": "Five_weekends",
+    "Name": "Five weekends"
+  },
+  {
+    "Href": "FizzBuzz",
+    "Name": "FizzBuzz"
+  },
+  {
+    "Href": "Flatten_a_list",
+    "Name": "Flatten a list"
+  },
+  {
+    "Href": "Flipping_bits_game",
+    "Name": "Flipping bits game"
+  },
+  {
+    "Href": "Flow-control_structures",
+    "Name": "Flow-control structures"
+  },
+  {
+    "Href": "Floyd%27s_triangle",
+    "Name": "Floyd's triangle"
+  },
+  {
+    "Href": "Forest_fire",
+    "Name": "Forest fire"
+  },
+  {
+    "Href": "Fork",
+    "Name": "Fork"
+  },
+  {
+    "Href": "Formal_power_series",
+    "Name": "Formal power series"
+  },
+  {
+    "Href": "Formatted_numeric_output",
+    "Name": "Formatted numeric output"
+  },
+  {
+    "Href": "Forward_difference",
+    "Name": "Forward difference"
+  },
+  {
+    "Href": "Four_bit_adder",
+    "Name": "Four bit adder"
+  },
+  {
+    "Href": "Fractal_tree",
+    "Name": "Fractal tree"
+  },
+  {
+    "Href": "Fractran",
+    "Name": "Fractran"
+  },
+  {
+    "Href": "Function_composition",
+    "Name": "Function composition"
+  },
+  {
+    "Href": "Function_definition",
+    "Name": "Function definition"
+  },
+  {
+    "Href": "Function_frequency",
+    "Name": "Function frequency"
+  },
+  {
+    "Href": "Function_prototype",
+    "Name": "Function prototype"
+  },
+  {
+    "Href": "Galton_box_animation",
+    "Name": "Galton box animation"
+  },
+  {
+    "Href": "Gamma_function",
+    "Name": "Gamma function"
+  },
+  {
+    "Href": "Gaussian_elimination",
+    "Name": "Gaussian elimination"
+  },
+  {
+    "Href": "Generate_Chess960_starting_position",
+    "Name": "Generate Chess960 starting position"
+  },
+  {
+    "Href": "Generate_lower_case_ASCII_alphabet",
+    "Name": "Generate lower case ASCII alphabet"
+  },
+  {
+    "Href": "Exponential",
+    "Name": "Generator/Exponential"
+  },
+  {
+    "Href": "Generic_swap",
+    "Name": "Generic swap"
+  },
+  {
+    "Href": "Globally_replace_text_in_several_files",
+    "Name": "Globally replace text in several files"
+  },
+  {
+    "Href": "Go_Fish",
+    "Name": "Go Fish"
+  },
+  {
+    "Href": "Gray_code",
+    "Name": "Gray code"
+  },
+  {
+    "Href": "Grayscale_image",
+    "Name": "Grayscale image"
+  },
+  {
+    "Href": "Greatest_common_divisor",
+    "Name": "Greatest common divisor"
+  },
+  {
+    "Href": "Greatest_element_of_a_list",
+    "Name": "Greatest element of a list"
+  },
+  {
+    "Href": "Greatest_subsequential_sum",
+    "Name": "Greatest subsequential sum"
+  },
+  {
+    "Href": "Display",
+    "Name": "Greyscale bars/Display"
+  },
+  {
+    "Href": "Guess_the_number",
+    "Name": "Guess the number"
+  },
+  {
+    "Href": "With_feedback",
+    "Name": "Guess the number/With feedback"
+  },
+  {
+    "Href": "With_feedback_(player)",
+    "Name": "Guess the number/With feedback (player)"
+  },
+  {
+    "Href": "GUI_component_interaction",
+    "Name": "GUI component interaction"
+  },
+  {
+    "Href": "disabling_of_controls",
+    "Name": "GUI enabling/disabling of controls"
+  },
+  {
+    "Href": "Maximum_window_dimensions",
+    "Name": "GUI/Maximum window dimensions"
+  },
+  {
+    "Href": "Hailstone_sequence",
+    "Name": "Hailstone sequence"
+  },
+  {
+    "Href": "Hamming_numbers",
+    "Name": "Hamming numbers"
+  },
+  {
+    "Href": "Handle_a_signal",
+    "Name": "Handle a signal"
+  },
+  {
+    "Href": "Happy_numbers",
+    "Name": "Happy numbers"
+  },
+  {
+    "Href": "Harshad_or_Niven_series",
+    "Name": "Harshad or Niven series"
+  },
+  {
+    "Href": "Hash_from_two_arrays",
+    "Name": "Hash from two arrays"
+  },
+  {
+    "Href": "Hash_join",
+    "Name": "Hash join"
+  },
+  {
+    "Href": "Haversine_formula",
+    "Name": "Haversine formula"
+  },
+  {
+    "Href": "Graphical",
+    "Name": "Hello world/Graphical"
+  },
+  {
+    "Href": "Line_printer",
+    "Name": "Hello world/Line printer"
+  },
+  {
+    "Href": "Newbie",
+    "Name": "Hello world/Newbie"
+  },
+  {
+    "Href": "Newline_omission",
+    "Name": "Hello world/Newline omission"
+  },
+  {
+    "Href": "Standard_error",
+    "Name": "Hello world/Standard error"
+  },
+  {
+    "Href": "Text",
+    "Name": "Hello world/Text"
+  },
+  {
+    "Href": "Web_server",
+    "Name": "Hello world/Web server"
+  },
+  {
+    "Href": "Here_document",
+    "Name": "Here document"
+  },
+  {
+    "Href": "Hickerson_series_of_almost_integers",
+    "Name": "Hickerson series of almost integers"
+  },
+  {
+    "Href": "Higher-order_functions",
+    "Name": "Higher-order functions"
+  },
+  {
+    "Href": "History_variables",
+    "Name": "History variables"
+  },
+  {
+    "Href": "Hofstadter_Figure-Figure_sequences",
+    "Name": "Hofstadter Figure-Figure sequences"
+  },
+  {
+    "Href": "Hofstadter_Q_sequence",
+    "Name": "Hofstadter Q sequence"
+  },
+  {
+    "Href": "Hofstadter-Conway_$10,000_sequence",
+    "Name": "Hofstadter-Conway $10,000 sequence"
+  },
+  {
+    "Href": "Holidays_related_to_Easter",
+    "Name": "Holidays related to Easter"
+  },
+  {
+    "Href": "Honeycombs",
+    "Name": "Honeycombs"
+  },
+  {
+    "Href": "Horizontal_sundial_calculations",
+    "Name": "Horizontal sundial calculations"
+  },
+  {
+    "Href": "Horner%27s_rule_for_polynomial_evaluation",
+    "Name": "Horner's rule for polynomial evaluation"
+  },
+  {
+    "Href": "Host_introspection",
+    "Name": "Host introspection"
+  },
+  {
+    "Href": "Hostname",
+    "Name": "Hostname"
+  },
+  {
+    "Href": "Hough_transform",
+    "Name": "Hough transform"
+  },
+  {
+    "Href": "HTTP",
+    "Name": "HTTP"
+  },
+  {
+    "Href": "HTTPS",
+    "Name": "HTTPS"
+  },
+  {
+    "Href": "Authenticated",
+    "Name": "HTTPS/Authenticated"
+  },
+  {
+    "Href": "Client-authenticated",
+    "Name": "HTTPS/Client-authenticated"
+  },
+  {
+    "Href": "Huffman_coding",
+    "Name": "Huffman coding"
+  },
+  {
+    "Href": "I_before_E_except_after_C",
+    "Name": "I before E except after C"
+  },
+  {
+    "Href": "IBAN",
+    "Name": "IBAN"
+  },
+  {
+    "Href": "Identity_matrix",
+    "Name": "Identity matrix"
+  },
+  {
+    "Href": "Image_convolution",
+    "Name": "Image convolution"
+  },
+  {
+    "Href": "Image_noise",
+    "Name": "Image noise"
+  },
+  {
+    "Href": "Include_a_file",
+    "Name": "Include a file"
+  },
+  {
+    "Href": "Increment_a_numerical_string",
+    "Name": "Increment a numerical string"
+  },
+  {
+    "Href": "Infinity",
+    "Name": "Infinity"
+  },
+  {
+    "Href": "Multiple",
+    "Name": "Inheritance/Multiple"
+  },
+  {
+    "Href": "Single",
+    "Name": "Inheritance/Single"
+  },
+  {
+    "Href": "Input_loop",
+    "Name": "Input loop"
+  },
+  {
+    "Href": "Integer_comparison",
+    "Name": "Integer comparison"
+  },
+  {
+    "Href": "Integer_overflow",
+    "Name": "Integer overflow"
+  },
+  {
+    "Href": "Integer_sequence",
+    "Name": "Integer sequence"
+  },
+  {
+    "Href": "Interactive_programming",
+    "Name": "Interactive programming"
+  },
+  {
+    "Href": "Introspection",
+    "Name": "Introspection"
+  },
+  {
+    "Href": "Inverted_index",
+    "Name": "Inverted index"
+  },
+  {
+    "Href": "Inverted_syntax",
+    "Name": "Inverted syntax"
+  },
+  {
+    "Href": "Iterated_digits_squaring",
+    "Name": "Iterated digits squaring"
+  },
+  {
+    "Href": "Jensen%27s_Device",
+    "Name": "Jensen's Device"
+  },
+  {
+    "Href": "Josephus_problem",
+    "Name": "Josephus problem"
+  },
+  {
+    "Href": "Joystick_position",
+    "Name": "Joystick position"
+  },
+  {
+    "Href": "JSON",
+    "Name": "JSON"
+  },
+  {
+    "Href": "Jump_anywhere",
+    "Name": "Jump anywhere"
+  },
+  {
+    "Href": "K-d_tree",
+    "Name": "K-d tree"
+  },
+  {
+    "Href": "K-means%2B%2B_clustering",
+    "Name": "K-means++ clustering"
+  },
+  {
+    "Href": "Kaprekar_numbers",
+    "Name": "Kaprekar numbers"
+  },
+  {
+    "Href": "Flush_the_keyboard_buffer",
+    "Name": "Keyboard input/Flush the keyboard buffer"
+  },
+  {
+    "Href": "Keypress_check",
+    "Name": "Keyboard input/Keypress check"
+  },
+  {
+    "Href": "Obtain_a_Y_or_N_response",
+    "Name": "Keyboard input/Obtain a Y or N response"
+  },
+  {
+    "Href": "Keyboard_macros",
+    "Name": "Keyboard macros"
+  },
+  {
+    "Href": "0-1",
+    "Name": "Knapsack problem/0-1"
+  },
+  {
+    "Href": "Bounded",
+    "Name": "Knapsack problem/Bounded"
+  },
+  {
+    "Href": "Continuous",
+    "Name": "Knapsack problem/Continuous"
+  },
+  {
+    "Href": "Unbounded",
+    "Name": "Knapsack problem/Unbounded"
+  },
+  {
+    "Href": "Knight%27s_tour",
+    "Name": "Knight's tour"
+  },
+  {
+    "Href": "Knuth_shuffle",
+    "Name": "Knuth shuffle"
+  },
+  {
+    "Href": "Knuth%27s_algorithm_S",
+    "Name": "Knuth's algorithm S"
+  },
+  {
+    "Href": "Langton%27s_ant",
+    "Name": "Langton's ant"
+  },
+  {
+    "Href": "Largest_int_from_concatenated_ints",
+    "Name": "Largest int from concatenated ints"
+  },
+  {
+    "Href": "Last_Friday_of_each_month",
+    "Name": "Last Friday of each month"
+  },
+  {
+    "Href": "Last_letter-first_letter",
+    "Name": "Last letter-first letter"
+  },
+  {
+    "Href": "Leap_year",
+    "Name": "Leap year"
+  },
+  {
+    "Href": "Least_common_multiple",
+    "Name": "Least common multiple"
+  },
+  {
+    "Href": "Left_factorials",
+    "Name": "Left factorials"
+  },
+  {
+    "Href": "Letter_frequency",
+    "Name": "Letter frequency"
+  },
+  {
+    "Href": "Levenshtein_distance",
+    "Name": "Levenshtein distance"
+  },
+  {
+    "Href": "Linear_congruential_generator",
+    "Name": "Linear congruential generator"
+  },
+  {
+    "Href": "List_comprehensions",
+    "Name": "List comprehensions"
+  },
+  {
+    "Href": "Floating_point",
+    "Name": "Literals/Floating point"
+  },
+  {
+    "Href": "Integer",
+    "Name": "Literals/Integer"
+  },
+  {
+    "Href": "String",
+    "Name": "Literals/String"
+  },
+  {
+    "Href": "Logical_operations",
+    "Name": "Logical operations"
+  },
+  {
+    "Href": "Long_multiplication",
+    "Name": "Long multiplication"
+  },
+  {
+    "Href": "Longest_common_subsequence",
+    "Name": "Longest common subsequence"
+  },
+  {
+    "Href": "Longest_increasing_subsequence",
+    "Name": "Longest increasing subsequence"
+  },
+  {
+    "Href": "Longest_string_challenge",
+    "Name": "Longest string challenge"
+  },
+  {
+    "Href": "Look-and-say_sequence",
+    "Name": "Look-and-say sequence"
+  },
+  {
+    "Href": "Loop_over_multiple_arrays_simultaneously",
+    "Name": "Loop over multiple arrays simultaneously"
+  },
+  {
+    "Href": "Break",
+    "Name": "Loops/Break"
+  },
+  {
+    "Href": "Continue",
+    "Name": "Loops/Continue"
+  },
+  {
+    "Href": "Do-while",
+    "Name": "Loops/Do-while"
+  },
+  {
+    "Href": "Downward_for",
+    "Name": "Loops/Downward for"
+  },
+  {
+    "Href": "For",
+    "Name": "Loops/For"
+  },
+  {
+    "Href": "For_with_a_specified_step",
+    "Name": "Loops/For with a specified step"
+  },
+  {
+    "Href": "Foreach",
+    "Name": "Loops/Foreach"
+  },
+  {
+    "Href": "Infinite",
+    "Name": "Loops/Infinite"
+  },
+  {
+    "Href": "N_plus_one_half",
+    "Name": "Loops/N plus one half"
+  },
+  {
+    "Href": "Nested",
+    "Name": "Loops/Nested"
+  },
+  {
+    "Href": "While",
+    "Name": "Loops/While"
+  },
+  {
+    "Href": "LU_decomposition",
+    "Name": "LU decomposition"
+  },
+  {
+    "Href": "Lucas-Lehmer_test",
+    "Name": "Lucas-Lehmer test"
+  },
+  {
+    "Href": "Ludic_numbers",
+    "Name": "Ludic numbers"
+  },
+  {
+    "Href": "Luhn_test_of_credit_card_numbers",
+    "Name": "Luhn test of credit card numbers"
+  },
+  {
+    "Href": "LZW_compression",
+    "Name": "LZW compression"
+  },
+  {
+    "Href": "Machine_code",
+    "Name": "Machine code"
+  },
+  {
+    "Href": "Mad_Libs",
+    "Name": "Mad Libs"
+  },
+  {
+    "Href": "Magic_squares_of_odd_order",
+    "Name": "Magic squares of odd order"
+  },
+  {
+    "Href": "Main_step_of_GOST_28147-89",
+    "Name": "Main step of GOST 28147-89"
+  },
+  {
+    "Href": "Make_directory_path",
+    "Name": "Make directory path"
+  },
+  {
+    "Href": "Man_or_boy_test",
+    "Name": "Man or boy test"
+  },
+  {
+    "Href": "Mandelbrot_set",
+    "Name": "Mandelbrot set"
+  },
+  {
+    "Href": "Map_range",
+    "Name": "Map range"
+  },
+  {
+    "Href": "Matrix_arithmetic",
+    "Name": "Matrix arithmetic"
+  },
+  {
+    "Href": "Matrix_multiplication",
+    "Name": "Matrix multiplication"
+  },
+  {
+    "Href": "Matrix_transposition",
+    "Name": "Matrix transposition"
+  },
+  {
+    "Href": "Matrix-exponentiation_operator",
+    "Name": "Matrix-exponentiation operator"
+  },
+  {
+    "Href": "Maximum_triangle_path_sum",
+    "Name": "Maximum triangle path sum"
+  },
+  {
+    "Href": "Maze_generation",
+    "Name": "Maze generation"
+  },
+  {
+    "Href": "Maze_solving",
+    "Name": "Maze solving"
+  },
+  {
+    "Href": "MD4",
+    "Name": "MD4"
+  },
+  {
+    "Href": "MD5",
+    "Name": "MD5"
+  },
+  {
+    "Href": "Implementation",
+    "Name": "MD5/Implementation"
+  },
+  {
+    "Href": "Median_filter",
+    "Name": "Median filter"
+  },
+  {
+    "Href": "Memory_allocation",
+    "Name": "Memory allocation"
+  },
+  {
+    "Href": "Memory_layout_of_a_data_structure",
+    "Name": "Memory layout of a data structure"
+  },
+  {
+    "Href": "Menu",
+    "Name": "Menu"
+  },
+  {
+    "Href": "Metaprogramming",
+    "Name": "Metaprogramming"
+  },
+  {
+    "Href": "Metered_concurrency",
+    "Name": "Metered concurrency"
+  },
+  {
+    "Href": "Metronome",
+    "Name": "Metronome"
+  },
+  {
+    "Href": "Middle_three_digits",
+    "Name": "Middle three digits"
+  },
+  {
+    "Href": "Miller-Rabin_primality_test",
+    "Name": "Miller-Rabin primality test"
+  },
+  {
+    "Href": "Minesweeper_game",
+    "Name": "Minesweeper game"
+  },
+  {
+    "Href": "Modular_exponentiation",
+    "Name": "Modular exponentiation"
+  },
+  {
+    "Href": "Modular_inverse",
+    "Name": "Modular inverse"
+  },
+  {
+    "Href": "Monte_Carlo_methods",
+    "Name": "Monte Carlo methods"
+  },
+  {
+    "Href": "Monty_Hall_problem",
+    "Name": "Monty Hall problem"
+  },
+  {
+    "Href": "Morse_code",
+    "Name": "Morse code"
+  },
+  {
+    "Href": "Mouse_position",
+    "Name": "Mouse position"
+  },
+  {
+    "Href": "Move-to-front_algorithm",
+    "Name": "Move-to-front algorithm"
+  },
+  {
+    "Href": "Multifactorial",
+    "Name": "Multifactorial"
+  },
+  {
+    "Href": "Multiple_distinct_objects",
+    "Name": "Multiple distinct objects"
+  },
+  {
+    "Href": "Multiple_regression",
+    "Name": "Multiple regression"
+  },
+  {
+    "Href": "Multiplication_tables",
+    "Name": "Multiplication tables"
+  },
+  {
+    "Href": "Multiplicative_order",
+    "Name": "Multiplicative order"
+  },
+  {
+    "Href": "Multisplit",
+    "Name": "Multisplit"
+  },
+  {
+    "Href": "Munching_squares",
+    "Name": "Munching squares"
+  },
+  {
+    "Href": "Mutex",
+    "Name": "Mutex"
+  },
+  {
+    "Href": "Mutual_recursion",
+    "Name": "Mutual recursion"
+  },
+  {
+    "Href": "N%27th",
+    "Name": "N'th"
+  },
+  {
+    "Href": "N-queens_problem",
+    "Name": "N-queens problem"
+  },
+  {
+    "Href": "Named_parameters",
+    "Name": "Named parameters"
+  },
+  {
+    "Href": "Narcissist",
+    "Name": "Narcissist"
+  },
+  {
+    "Href": "Narcissistic_decimal_number",
+    "Name": "Narcissistic decimal number"
+  },
+  {
+    "Href": "Natural_sorting",
+    "Name": "Natural sorting"
+  },
+  {
+    "Href": "Nautical_bell",
+    "Name": "Nautical bell"
+  },
+  {
+    "Href": "Non-continuous_subsequences",
+    "Name": "Non-continuous subsequences"
+  },
+  {
+    "Href": "Convert",
+    "Name": "Non-decimal radices/Convert"
+  },
+  {
+    "Href": "Input",
+    "Name": "Non-decimal radices/Input"
+  },
+  {
+    "Href": "Output",
+    "Name": "Non-decimal radices/Output"
+  },
+  {
+    "Href": "Nth_root",
+    "Name": "Nth root"
+  },
+  {
+    "Href": "Null_object",
+    "Name": "Null object"
+  },
+  {
+    "Href": "Number_names",
+    "Name": "Number names"
+  },
+  {
+    "Href": "Number_reversal_game",
+    "Name": "Number reversal game"
+  },
+  {
+    "Href": "Numeric_error_propagation",
+    "Name": "Numeric error propagation"
+  },
+  {
+    "Href": "Numerical_integration",
+    "Name": "Numerical integration"
+  },
+  {
+    "Href": "Gauss-Legendre_Quadrature",
+    "Name": "Numerical integration/Gauss-Legendre Quadrature"
+  },
+  {
+    "Href": "Object_serialization",
+    "Name": "Object serialization"
+  },
+  {
+    "Href": "Odd_word_problem",
+    "Name": "Odd word problem"
+  },
+  {
+    "Href": "Old_lady_swallowed_a_fly",
+    "Name": "Old lady swallowed a fly"
+  },
+  {
+    "Href": "OLE_Automation",
+    "Name": "OLE Automation"
+  },
+  {
+    "Href": "One_of_n_lines_in_a_file",
+    "Name": "One of n lines in a file"
+  },
+  {
+    "Href": "One-dimensional_cellular_automata",
+    "Name": "One-dimensional cellular automata"
+  },
+  {
+    "Href": "OpenGL",
+    "Name": "OpenGL"
+  },
+  {
+    "Href": "Operator_precedence",
+    "Name": "Operator precedence"
+  },
+  {
+    "Href": "Optional_parameters",
+    "Name": "Optional parameters"
+  },
+  {
+    "Href": "Order_disjoint_list_items",
+    "Name": "Order disjoint list items"
+  },
+  {
+    "Href": "Order_two_numerical_lists",
+    "Name": "Order two numerical lists"
+  },
+  {
+    "Href": "Ordered_Partitions",
+    "Name": "Ordered Partitions"
+  },
+  {
+    "Href": "Ordered_words",
+    "Name": "Ordered words"
+  },
+  {
+    "Href": "Palindrome_detection",
+    "Name": "Palindrome detection"
+  },
+  {
+    "Href": "Pangram_checker",
+    "Name": "Pangram checker"
+  },
+  {
+    "Href": "Paraffins",
+    "Name": "Paraffins"
+  },
+  {
+    "Href": "Parallel_calculations",
+    "Name": "Parallel calculations"
+  },
+  {
+    "Href": "Parametric_polymorphism",
+    "Name": "Parametric polymorphism"
+  },
+  {
+    "Href": "Parametrized_SQL_statement",
+    "Name": "Parametrized SQL statement"
+  },
+  {
+    "Href": "Parse_an_IP_Address",
+    "Name": "Parse an IP Address"
+  },
+  {
+    "Href": "RPN_calculator_algorithm",
+    "Name": "Parsing/RPN calculator algorithm"
+  },
+  {
+    "Href": "RPN_to_infix_conversion",
+    "Name": "Parsing/RPN to infix conversion"
+  },
+  {
+    "Href": "Shunting-yard_algorithm",
+    "Name": "Parsing/Shunting-yard algorithm"
+  },
+  {
+    "Href": "Partial_function_application",
+    "Name": "Partial function application"
+  },
+  {
+    "Href": "Pascal%27s_triangle",
+    "Name": "Pascal's triangle"
+  },
+  {
+    "Href": "Puzzle",
+    "Name": "Pascal's triangle/Puzzle"
+  },
+  {
+    "Href": "Pattern_matching",
+    "Name": "Pattern matching"
+  },
+  {
+    "Href": "Penney%27s_game",
+    "Name": "Penney's game"
+  },
+  {
+    "Href": "Percentage_difference_between_images",
+    "Name": "Percentage difference between images"
+  },
+  {
+    "Href": "Bond_percolation",
+    "Name": "Percolation/Bond percolation"
+  },
+  {
+    "Href": "Mean_cluster_density",
+    "Name": "Percolation/Mean cluster density"
+  },
+  {
+    "Href": "Mean_run_density",
+    "Name": "Percolation/Mean run density"
+  },
+  {
+    "Href": "Site_percolation",
+    "Name": "Percolation/Site percolation"
+  },
+  {
+    "Href": "Perfect_numbers",
+    "Name": "Perfect numbers"
+  },
+  {
+    "Href": "Permutation_test",
+    "Name": "Permutation test"
+  },
+  {
+    "Href": "Permutations",
+    "Name": "Permutations"
+  },
+  {
+    "Href": "Permutations_by_swapping",
+    "Name": "Permutations by swapping"
+  },
+  {
+    "Href": "Derangements",
+    "Name": "Permutations/Derangements"
+  },
+  {
+    "Href": "Rank_of_a_permutation",
+    "Name": "Permutations/Rank of a permutation"
+  },
+  {
+    "Href": "Pernicious_numbers",
+    "Name": "Pernicious numbers"
+  },
+  {
+    "Href": "Phrase_reversals",
+    "Name": "Phrase reversals"
+  },
+  {
+    "Href": "Pi",
+    "Name": "Pi"
+  },
+  {
+    "Href": "Pick_random_element",
+    "Name": "Pick random element"
+  },
+  {
+    "Href": "Pig_the_dice_game",
+    "Name": "Pig the dice game"
+  },
+  {
+    "Href": "Player",
+    "Name": "Pig the dice game/Player"
+  },
+  {
+    "Href": "Display",
+    "Name": "Pinstripe/Display"
+  },
+  {
+    "Href": "Printer",
+    "Name": "Pinstripe/Printer"
+  },
+  {
+    "Href": "Play_recorded_sounds",
+    "Name": "Play recorded sounds"
+  },
+  {
+    "Href": "Playing_cards",
+    "Name": "Playing cards"
+  },
+  {
+    "Href": "Plot_coordinate_pairs",
+    "Name": "Plot coordinate pairs"
+  },
+  {
+    "Href": "Pointers_and_references",
+    "Name": "Pointers and references"
+  },
+  {
+    "Href": "Polymorphic_copy",
+    "Name": "Polymorphic copy"
+  },
+  {
+    "Href": "Polymorphism",
+    "Name": "Polymorphism"
+  },
+  {
+    "Href": "Polynomial_long_division",
+    "Name": "Polynomial long division"
+  },
+  {
+    "Href": "Polynomial_regression",
+    "Name": "Polynomial regression"
+  },
+  {
+    "Href": "Power_set",
+    "Name": "Power set"
+  },
+  {
+    "Href": "Pragmatic_directives",
+    "Name": "Pragmatic directives"
+  },
+  {
+    "Href": "Price_fraction",
+    "Name": "Price fraction"
+  },
+  {
+    "Href": "Primality_by_trial_division",
+    "Name": "Primality by trial division"
+  },
+  {
+    "Href": "Prime_decomposition",
+    "Name": "Prime decomposition"
+  },
+  {
+    "Href": "Priority_queue",
+    "Name": "Priority queue"
+  },
+  {
+    "Href": "Probabilistic_choice",
+    "Name": "Probabilistic choice"
+  },
+  {
+    "Href": "Problem_of_Apollonius",
+    "Name": "Problem of Apollonius"
+  },
+  {
+    "Href": "Program_name",
+    "Name": "Program name"
+  },
+  {
+    "Href": "Program_termination",
+    "Name": "Program termination"
+  },
+  {
+    "Href": "Pythagorean_triples",
+    "Name": "Pythagorean triples"
+  },
+  {
+    "Href": "QR_decomposition",
+    "Name": "QR decomposition"
+  },
+  {
+    "Href": "Quaternion_type",
+    "Name": "Quaternion type"
+  },
+  {
+    "Href": "Definition",
+    "Name": "Queue/Definition"
+  },
+  {
+    "Href": "Usage",
+    "Name": "Queue/Usage"
+  },
+  {
+    "Href": "Quickselect_algorithm",
+    "Name": "Quickselect algorithm"
+  },
+  {
+    "Href": "Quine",
+    "Name": "Quine"
+  },
+  {
+    "Href": "Random_number_generator_(device)",
+    "Name": "Random number generator (device)"
+  },
+  {
+    "Href": "Random_number_generator_(included)",
+    "Name": "Random number generator (included)"
+  },
+  {
+    "Href": "Random_numbers",
+    "Name": "Random numbers"
+  },
+  {
+    "Href": "Range_expansion",
+    "Name": "Range expansion"
+  },
+  {
+    "Href": "Range_extraction",
+    "Name": "Range extraction"
+  },
+  {
+    "Href": "Ranking_methods",
+    "Name": "Ranking methods"
+  },
+  {
+    "Href": "Rate_counter",
+    "Name": "Rate counter"
+  },
+  {
+    "Href": "Ray-casting_algorithm",
+    "Name": "Ray-casting algorithm"
+  },
+  {
+    "Href": "RCRPG",
+    "Name": "RCRPG"
+  },
+  {
+    "Href": "Read_a_configuration_file",
+    "Name": "Read a configuration file"
+  },
+  {
+    "Href": "Read_a_file_line_by_line",
+    "Name": "Read a file line by line"
+  },
+  {
+    "Href": "Read_a_specific_line_from_a_file",
+    "Name": "Read a specific line from a file"
+  },
+  {
+    "Href": "Read_entire_file",
+    "Name": "Read entire file"
+  },
+  {
+    "Href": "Real_constants_and_functions",
+    "Name": "Real constants and functions"
+  },
+  {
+    "Href": "Record_sound",
+    "Name": "Record sound"
+  },
+  {
+    "Href": "Reduced_row_echelon_form",
+    "Name": "Reduced row echelon form"
+  },
+  {
+    "Href": "Regular_expressions",
+    "Name": "Regular expressions"
+  },
+  {
+    "Href": "Remove_duplicate_elements",
+    "Name": "Remove duplicate elements"
+  },
+  {
+    "Href": "Remove_lines_from_a_file",
+    "Name": "Remove lines from a file"
+  },
+  {
+    "Href": "Rename_a_file",
+    "Name": "Rename a file"
+  },
+  {
+    "Href": "Rendezvous",
+    "Name": "Rendezvous"
+  },
+  {
+    "Href": "Rep-string",
+    "Name": "Rep-string"
+  },
+  {
+    "Href": "Repeat_a_string",
+    "Name": "Repeat a string"
+  },
+  {
+    "Href": "Resistor_mesh",
+    "Name": "Resistor mesh"
+  },
+  {
+    "Href": "Respond_to_an_unknown_method_call",
+    "Name": "Respond to an unknown method call"
+  },
+  {
+    "Href": "Return_multiple_values",
+    "Name": "Return multiple values"
+  },
+  {
+    "Href": "Reverse_a_string",
+    "Name": "Reverse a string"
+  },
+  {
+    "Href": "Reverse_words_in_a_string",
+    "Name": "Reverse words in a string"
+  },
+  {
+    "Href": "RIPEMD-160",
+    "Name": "RIPEMD-160"
+  },
+  {
+    "Href": "Rock-paper-scissors",
+    "Name": "Rock-paper-scissors"
+  },
+  {
+    "Href": "Decode",
+    "Name": "Roman numerals/Decode"
+  },
+  {
+    "Href": "Encode",
+    "Name": "Roman numerals/Encode"
+  },
+  {
+    "Href": "Roots_of_a_function",
+    "Name": "Roots of a function"
+  },
+  {
+    "Href": "Roots_of_a_quadratic_function",
+    "Name": "Roots of a quadratic function"
+  },
+  {
+    "Href": "Roots_of_unity",
+    "Name": "Roots of unity"
+  },
+  {
+    "Href": "Count_examples",
+    "Name": "Rosetta Code/Count examples"
+  },
+  {
+    "Href": "Find_bare_lang_tags",
+    "Name": "Rosetta Code/Find bare lang tags"
+  },
+  {
+    "Href": "Find_unimplemented_tasks",
+    "Name": "Rosetta Code/Find unimplemented tasks"
+  },
+  {
+    "Href": "Fix_code_tags",
+    "Name": "Rosetta Code/Fix code tags"
+  },
+  {
+    "Href": "Rank_languages_by_popularity",
+    "Name": "Rosetta Code/Rank languages by popularity"
+  },
+  {
+    "Href": "Rot-13",
+    "Name": "Rot-13"
+  },
+  {
+    "Href": "RSA_code",
+    "Name": "RSA code"
+  },
+  {
+    "Href": "Run-length_encoding",
+    "Name": "Run-length encoding"
+  },
+  {
+    "Href": "Runge-Kutta_method",
+    "Name": "Runge-Kutta method"
+  },
+  {
+    "Href": "Runtime_evaluation",
+    "Name": "Runtime evaluation"
+  },
+  {
+    "Href": "In_an_environment",
+    "Name": "Runtime evaluation/In an environment"
+  },
+  {
+    "Href": "S-Expressions",
+    "Name": "S-Expressions"
+  },
+  {
+    "Href": "Safe_addition",
+    "Name": "Safe addition"
+  },
+  {
+    "Href": "Same_Fringe",
+    "Name": "Same Fringe"
+  },
+  {
+    "Href": "Scope_modifiers",
+    "Name": "Scope modifiers"
+  },
+  {
+    "Href": "Function_names_and_labels",
+    "Name": "Scope/Function names and labels"
+  },
+  {
+    "Href": "Search_a_list",
+    "Name": "Search a list"
+  },
+  {
+    "Href": "Secure_temporary_file",
+    "Name": "Secure temporary file"
+  },
+  {
+    "Href": "SEDOLs",
+    "Name": "SEDOLs"
+  },
+  {
+    "Href": "Self-describing_numbers",
+    "Name": "Self-describing numbers"
+  },
+  {
+    "Href": "Self-referential_sequence",
+    "Name": "Self-referential sequence"
+  },
+  {
+    "Href": "Semiprime",
+    "Name": "Semiprime"
+  },
+  {
+    "Href": "Semordnilap",
+    "Name": "Semordnilap"
+  },
+  {
+    "Href": "Send_an_unknown_method_call",
+    "Name": "Send an unknown method call"
+  },
+  {
+    "Href": "Send_email",
+    "Name": "Send email"
+  },
+  {
+    "Href": "Sequence_of_non-squares",
+    "Name": "Sequence of non-squares"
+  },
+  {
+    "Href": "Sequence_of_primes_by_Trial_Division",
+    "Name": "Sequence of primes by Trial Division"
+  },
+  {
+    "Href": "Set",
+    "Name": "Set"
+  },
+  {
+    "Href": "Set_consolidation",
+    "Name": "Set consolidation"
+  },
+  {
+    "Href": "Set_of_real_numbers",
+    "Name": "Set of real numbers"
+  },
+  {
+    "Href": "Set_puzzle",
+    "Name": "Set puzzle"
+  },
+  {
+    "Href": "Seven-sided_dice_from_five-sided_dice",
+    "Name": "Seven-sided dice from five-sided dice"
+  },
+  {
+    "Href": "SHA-1",
+    "Name": "SHA-1"
+  },
+  {
+    "Href": "SHA-256",
+    "Name": "SHA-256"
+  },
+  {
+    "Href": "Shell_one-liner",
+    "Name": "Shell one-liner"
+  },
+  {
+    "Href": "Short-circuit_evaluation",
+    "Name": "Short-circuit evaluation"
+  },
+  {
+    "Href": "Show_the_epoch",
+    "Name": "Show the epoch"
+  },
+  {
+    "Href": "Sierpinski_carpet",
+    "Name": "Sierpinski carpet"
+  },
+  {
+    "Href": "Sierpinski_triangle",
+    "Name": "Sierpinski triangle"
+  },
+  {
+    "Href": "Graphical",
+    "Name": "Sierpinski triangle/Graphical"
+  },
+  {
+    "Href": "Sieve_of_Eratosthenes",
+    "Name": "Sieve of Eratosthenes"
+  },
+  {
+    "Href": "Simple_database",
+    "Name": "Simple database"
+  },
+  {
+    "Href": "Simple_windowed_application",
+    "Name": "Simple windowed application"
+  },
+  {
+    "Href": "Keyboard",
+    "Name": "Simulate input/Keyboard"
+  },
+  {
+    "Href": "Mouse",
+    "Name": "Simulate input/Mouse"
+  },
+  {
+    "Href": "Singleton",
+    "Name": "Singleton"
+  },
+  {
+    "Href": "Element_definition",
+    "Name": "Singly-linked list/Element definition"
+  },
+  {
+    "Href": "Element_insertion",
+    "Name": "Singly-linked list/Element insertion"
+  },
+  {
+    "Href": "Traversal",
+    "Name": "Singly-linked list/Traversal"
+  },
+  {
+    "Href": "Sleep",
+    "Name": "Sleep"
+  },
+  {
+    "Href": "SOAP",
+    "Name": "SOAP"
+  },
+  {
+    "Href": "Sockets",
+    "Name": "Sockets"
+  },
+  {
+    "Href": "Sokoban",
+    "Name": "Sokoban"
+  },
+  {
+    "Href": "Solve_a_Hidato_puzzle",
+    "Name": "Solve a Hidato puzzle"
+  },
+  {
+    "Href": "Solve_a_Holy_Knight%27s_tour",
+    "Name": "Solve a Holy Knight's tour"
+  },
+  {
+    "Href": "Solve_a_Hopido_puzzle",
+    "Name": "Solve a Hopido puzzle"
+  },
+  {
+    "Href": "Solve_a_Numbrix_puzzle",
+    "Name": "Solve a Numbrix puzzle"
+  },
+  {
+    "Href": "Solve_the_no_connection_puzzle",
+    "Name": "Solve the no connection puzzle"
+  },
+  {
+    "Href": "Sort_an_array_of_composite_structures",
+    "Name": "Sort an array of composite structures"
+  },
+  {
+    "Href": "Sort_an_integer_array",
+    "Name": "Sort an integer array"
+  },
+  {
+    "Href": "Sort_disjoint_sublist",
+    "Name": "Sort disjoint sublist"
+  },
+  {
+    "Href": "Sort_stability",
+    "Name": "Sort stability"
+  },
+  {
+    "Href": "Sort_using_a_custom_comparator",
+    "Name": "Sort using a custom comparator"
+  },
+  {
+    "Href": "Bead_sort",
+    "Name": "Sorting algorithms/Bead sort"
+  },
+  {
+    "Href": "Bogosort",
+    "Name": "Sorting algorithms/Bogosort"
+  },
+  {
+    "Href": "Bubble_sort",
+    "Name": "Sorting algorithms/Bubble sort"
+  },
+  {
+    "Href": "Cocktail_sort",
+    "Name": "Sorting algorithms/Cocktail sort"
+  },
+  {
+    "Href": "Comb_sort",
+    "Name": "Sorting algorithms/Comb sort"
+  },
+  {
+    "Href": "Counting_sort",
+    "Name": "Sorting algorithms/Counting sort"
+  },
+  {
+    "Href": "Gnome_sort",
+    "Name": "Sorting algorithms/Gnome sort"
+  },
+  {
+    "Href": "Heapsort",
+    "Name": "Sorting algorithms/Heapsort"
+  },
+  {
+    "Href": "Insertion_sort",
+    "Name": "Sorting algorithms/Insertion sort"
+  },
+  {
+    "Href": "Merge_sort",
+    "Name": "Sorting algorithms/Merge sort"
+  },
+  {
+    "Href": "Pancake_sort",
+    "Name": "Sorting algorithms/Pancake sort"
+  },
+  {
+    "Href": "Permutation_sort",
+    "Name": "Sorting algorithms/Permutation sort"
+  },
+  {
+    "Href": "Quicksort",
+    "Name": "Sorting algorithms/Quicksort"
+  },
+  {
+    "Href": "Radix_sort",
+    "Name": "Sorting algorithms/Radix sort"
+  },
+  {
+    "Href": "Selection_sort",
+    "Name": "Sorting algorithms/Selection sort"
+  },
+  {
+    "Href": "Shell_sort",
+    "Name": "Sorting algorithms/Shell sort"
+  },
+  {
+    "Href": "Sleep_sort",
+    "Name": "Sorting algorithms/Sleep sort"
+  },
+  {
+    "Href": "Stooge_sort",
+    "Name": "Sorting algorithms/Stooge sort"
+  },
+  {
+    "Href": "Strand_sort",
+    "Name": "Sorting algorithms/Strand sort"
+  },
+  {
+    "Href": "Soundex",
+    "Name": "Soundex"
+  },
+  {
+    "Href": "Sparkline_in_unicode",
+    "Name": "Sparkline in unicode"
+  },
+  {
+    "Href": "Special_characters",
+    "Name": "Special characters"
+  },
+  {
+    "Href": "Special_variables",
+    "Name": "Special variables"
+  },
+  {
+    "Href": "Speech_synthesis",
+    "Name": "Speech synthesis"
+  },
+  {
+    "Href": "Spiral_matrix",
+    "Name": "Spiral matrix"
+  },
+  {
+    "Href": "SQL-based_authentication",
+    "Name": "SQL-based authentication"
+  },
+  {
+    "Href": "Stable_marriage_problem",
+    "Name": "Stable marriage problem"
+  },
+  {
+    "Href": "Stack",
+    "Name": "Stack"
+  },
+  {
+    "Href": "Stack_traces",
+    "Name": "Stack traces"
+  },
+  {
+    "Href": "Stair-climbing_puzzle",
+    "Name": "Stair-climbing puzzle"
+  },
+  {
+    "Href": "Standard_deviation",
+    "Name": "Standard deviation"
+  },
+  {
+    "Href": "Start_from_a_main_routine",
+    "Name": "Start from a main routine"
+  },
+  {
+    "Href": "State_name_puzzle",
+    "Name": "State name puzzle"
+  },
+  {
+    "Href": "Basic",
+    "Name": "Statistics/Basic"
+  },
+  {
+    "Href": "Stem-and-leaf_plot",
+    "Name": "Stem-and-leaf plot"
+  },
+  {
+    "Href": "String_append",
+    "Name": "String append"
+  },
+  {
+    "Href": "String_case",
+    "Name": "String case"
+  },
+  {
+    "Href": "String_comparison",
+    "Name": "String comparison"
+  },
+  {
+    "Href": "String_concatenation",
+    "Name": "String concatenation"
+  },
+  {
+    "Href": "String_interpolation_(included)",
+    "Name": "String interpolation (included)"
+  },
+  {
+    "Href": "String_length",
+    "Name": "String length"
+  },
+  {
+    "Href": "String_matching",
+    "Name": "String matching"
+  },
+  {
+    "Href": "String_prepend",
+    "Name": "String prepend"
+  },
+  {
+    "Href": "Strip_a_set_of_characters_from_a_string",
+    "Name": "Strip a set of characters from a string"
+  },
+  {
+    "Href": "Strip_block_comments",
+    "Name": "Strip block comments"
+  },
+  {
+    "Href": "Strip_comments_from_a_string",
+    "Name": "Strip comments from a string"
+  },
+  {
+    "Href": "Strip_control_codes_and_extended_characters_from_a_string",
+    "Name": "Strip control codes and extended characters from a string"
+  },
+  {
+    "Href": "Top_and_tail",
+    "Name": "Strip whitespace from a string/Top and tail"
+  },
+  {
+    "Href": "Substring",
+    "Name": "Substring"
+  },
+  {
+    "Href": "Top_and_tail",
+    "Name": "Substring/Top and tail"
+  },
+  {
+    "Href": "Subtractive_generator",
+    "Name": "Subtractive generator"
+  },
+  {
+    "Href": "Sudoku",
+    "Name": "Sudoku"
+  },
+  {
+    "Href": "Sum_and_product_of_an_array",
+    "Name": "Sum and product of an array"
+  },
+  {
+    "Href": "Sum_digits_of_an_integer",
+    "Name": "Sum digits of an integer"
+  },
+  {
+    "Href": "Sum_multiples_of_3_and_5",
+    "Name": "Sum multiples of 3 and 5"
+  },
+  {
+    "Href": "Sum_of_a_series",
+    "Name": "Sum of a series"
+  },
+  {
+    "Href": "Sum_of_squares",
+    "Name": "Sum of squares"
+  },
+  {
+    "Href": "Sutherland-Hodgman_polygon_clipping",
+    "Name": "Sutherland-Hodgman polygon clipping"
+  },
+  {
+    "Href": "Symmetric_difference",
+    "Name": "Symmetric difference"
+  },
+  {
+    "Href": "Synchronous_concurrency",
+    "Name": "Synchronous concurrency"
+  },
+  {
+    "Href": "System_time",
+    "Name": "System time"
+  },
+  {
+    "Href": "Postal_addresses",
+    "Name": "Table creation/Postal addresses"
+  },
+  {
+    "Href": "Take_notes_on_the_command_line",
+    "Name": "Take notes on the command line"
+  },
+  {
+    "Href": "Temperature_conversion",
+    "Name": "Temperature conversion"
+  },
+  {
+    "Href": "Clear_the_screen",
+    "Name": "Terminal control/Clear the screen"
+  },
+  {
+    "Href": "Coloured_text",
+    "Name": "Terminal control/Coloured text"
+  },
+  {
+    "Href": "Cursor_movement",
+    "Name": "Terminal control/Cursor movement"
+  },
+  {
+    "Href": "Cursor_positioning",
+    "Name": "Terminal control/Cursor positioning"
+  },
+  {
+    "Href": "Dimensions",
+    "Name": "Terminal control/Dimensions"
+  },
+  {
+    "Href": "Display_an_extended_character",
+    "Name": "Terminal control/Display an extended character"
+  },
+  {
+    "Href": "Hiding_the_cursor",
+    "Name": "Terminal control/Hiding the cursor"
+  },
+  {
+    "Href": "Inverse_video",
+    "Name": "Terminal control/Inverse video"
+  },
+  {
+    "Href": "Positional_read",
+    "Name": "Terminal control/Positional read"
+  },
+  {
+    "Href": "Preserve_screen",
+    "Name": "Terminal control/Preserve screen"
+  },
+  {
+    "Href": "Ringing_the_terminal_bell",
+    "Name": "Terminal control/Ringing the terminal bell"
+  },
+  {
+    "Href": "Unicode_output",
+    "Name": "Terminal control/Unicode output"
+  },
+  {
+    "Href": "Ternary_logic",
+    "Name": "Ternary logic"
+  },
+  {
+    "Href": "Test_a_function",
+    "Name": "Test a function"
+  },
+  {
+    "Href": "1",
+    "Name": "Text processing/1"
+  },
+  {
+    "Href": "2",
+    "Name": "Text processing/2"
+  },
+  {
+    "Href": "Max_licenses_in_use",
+    "Name": "Text processing/Max licenses in use"
+  },
+  {
+    "Href": "The_ISAAC_Cipher",
+    "Name": "The ISAAC Cipher"
+  },
+  {
+    "Href": "The_Twelve_Days_of_Christmas",
+    "Name": "The Twelve Days of Christmas"
+  },
+  {
+    "Href": "Thiele%27s_interpolation_formula",
+    "Name": "Thiele's interpolation formula"
+  },
+  {
+    "Href": "Tic-tac-toe",
+    "Name": "Tic-tac-toe"
+  },
+  {
+    "Href": "Time_a_function",
+    "Name": "Time a function"
+  },
+  {
+    "Href": "Tokenize_a_string",
+    "Name": "Tokenize a string"
+  },
+  {
+    "Href": "Top_rank_per_group",
+    "Name": "Top rank per group"
+  },
+  {
+    "Href": "Topic_variable",
+    "Name": "Topic variable"
+  },
+  {
+    "Href": "Topological_sort",
+    "Name": "Topological sort"
+  },
+  {
+    "Href": "Topswops",
+    "Name": "Topswops"
+  },
+  {
+    "Href": "Total_circles_area",
+    "Name": "Total circles area"
+  },
+  {
+    "Href": "Towers_of_Hanoi",
+    "Name": "Towers of Hanoi"
+  },
+  {
+    "Href": "Trabb_Pardo%E2%80%93Knuth_algorithm",
+    "Name": "Trabb Pardo–Knuth algorithm"
+  },
+  {
+    "Href": "Tree_traversal",
+    "Name": "Tree traversal"
+  },
+  {
+    "Href": "Trigonometric_functions",
+    "Name": "Trigonometric functions"
+  },
+  {
+    "Href": "Truncatable_primes",
+    "Name": "Truncatable primes"
+  },
+  {
+    "Href": "Truncate_a_file",
+    "Name": "Truncate a file"
+  },
+  {
+    "Href": "Twelve_statements",
+    "Name": "Twelve statements"
+  },
+  {
+    "Href": "Unbias_a_random_generator",
+    "Name": "Unbias a random generator"
+  },
+  {
+    "Href": "Undefined_values",
+    "Name": "Undefined values"
+  },
+  {
+    "Href": "Unicode_strings",
+    "Name": "Unicode strings"
+  },
+  {
+    "Href": "Unicode_variable_names",
+    "Name": "Unicode variable names"
+  },
+  {
+    "Href": "Universal_Turing_machine",
+    "Name": "Universal Turing machine"
+  },
+  {
+    "Href": "ls",
+    "Name": "Unix/ls"
+  },
+  {
+    "Href": "Update_a_configuration_file",
+    "Name": "Update a configuration file"
+  },
+  {
+    "Href": "URL_decoding",
+    "Name": "URL decoding"
+  },
+  {
+    "Href": "URL_encoding",
+    "Name": "URL encoding"
+  },
+  {
+    "Href": "Use_another_language_to_call_a_function",
+    "Name": "Use another language to call a function"
+  },
+  {
+    "Href": "Graphical",
+    "Name": "User input/Graphical"
+  },
+  {
+    "Href": "Text",
+    "Name": "User input/Text"
+  },
+  {
+    "Href": "Vampire_number",
+    "Name": "Vampire number"
+  },
+  {
+    "Href": "Van_der_Corput_sequence",
+    "Name": "Van der Corput sequence"
+  },
+  {
+    "Href": "Get",
+    "Name": "Variable size/Get"
+  },
+  {
+    "Href": "Set",
+    "Name": "Variable size/Set"
+  },
+  {
+    "Href": "Variable-length_quantity",
+    "Name": "Variable-length quantity"
+  },
+  {
+    "Href": "Variables",
+    "Name": "Variables"
+  },
+  {
+    "Href": "Variadic_function",
+    "Name": "Variadic function"
+  },
+  {
+    "Href": "Vector_products",
+    "Name": "Vector products"
+  },
+  {
+    "Href": "Chi-squared_test",
+    "Name": "Verify distribution uniformity/Chi-squared test"
+  },
+  {
+    "Href": "Naive",
+    "Name": "Verify distribution uniformity/Naive"
+  },
+  {
+    "Href": "Video_display_modes",
+    "Name": "Video display modes"
+  },
+  {
+    "Href": "Vigen%C3%A8re_cipher",
+    "Name": "Vigenère cipher"
+  },
+  {
+    "Href": "Cryptanalysis",
+    "Name": "Vigenère cipher/Cryptanalysis"
+  },
+  {
+    "Href": "Visualize_a_tree",
+    "Name": "Visualize a tree"
+  },
+  {
+    "Href": "Vogel%27s_approximation_method",
+    "Name": "Vogel's approximation method"
+  },
+  {
+    "Href": "Voronoi_diagram",
+    "Name": "Voronoi diagram"
+  },
+  {
+    "Href": "Non-recursively",
+    "Name": "Walk a directory/Non-recursively"
+  },
+  {
+    "Href": "Recursively",
+    "Name": "Walk a directory/Recursively"
+  },
+  {
+    "Href": "Web_scraping",
+    "Name": "Web scraping"
+  },
+  {
+    "Href": "Window_creation",
+    "Name": "Window creation"
+  },
+  {
+    "Href": "X11",
+    "Name": "Window creation/X11"
+  },
+  {
+    "Href": "Window_management",
+    "Name": "Window management"
+  },
+  {
+    "Href": "Wireworld",
+    "Name": "Wireworld"
+  },
+  {
+    "Href": "Word_wrap",
+    "Name": "Word wrap"
+  },
+  {
+    "Href": "World_Cup_group_stage",
+    "Name": "World Cup group stage"
+  },
+  {
+    "Href": "Write_float_arrays_to_a_text_file",
+    "Name": "Write float arrays to a text file"
+  },
+  {
+    "Href": "Write_language_name_in_3D_ASCII",
+    "Name": "Write language name in 3D ASCII"
+  },
+  {
+    "Href": "Write_to_Windows_event_log",
+    "Name": "Write to Windows event log"
+  },
+  {
+    "Href": "Xiaolin_Wu%27s_line_algorithm",
+    "Name": "Xiaolin Wu's line algorithm"
+  },
+  {
+    "Href": "DOM_serialization",
+    "Name": "XML/DOM serialization"
+  },
+  {
+    "Href": "Input",
+    "Name": "XML/Input"
+  },
+  {
+    "Href": "Output",
+    "Name": "XML/Output"
+  },
+  {
+    "Href": "XPath",
+    "Name": "XML/XPath"
+  },
+  {
+    "Href": "Y_combinator",
+    "Name": "Y combinator"
+  },
+  {
+    "Href": "Yahoo!_search_interface",
+    "Name": "Yahoo! search interface"
+  },
+  {
+    "Href": "Yin_and_yang",
+    "Name": "Yin and yang"
+  },
+  {
+    "Href": "Zebra_puzzle",
+    "Name": "Zebra puzzle"
+  },
+  {
+    "Href": "Zeckendorf_arithmetic",
+    "Name": "Zeckendorf arithmetic"
+  },
+  {
+    "Href": "Zeckendorf_number_representation",
+    "Name": "Zeckendorf number representation"
+  },
+  {
+    "Href": "Zero_to_the_zero_power",
+    "Name": "Zero to the zero power"
+  },
+  {
+    "Href": "Zhang-Suen_thinning_algorithm",
+    "Name": "Zhang-Suen thinning algorithm"
+  },
+  {
+    "Href": "Zig-zag_matrix",
+    "Name": "Zig-zag matrix"
+  }
 ]

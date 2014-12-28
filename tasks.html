@@ -1,3 +1,22 @@
+<link href=https://cdn.rawgit.com/LeaVerou/prism/e262ba89ccd3cae472fde2189d91f28eb8167fc5/themes/prism-okaidia.css rel=stylesheet>
+<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js></script>
+<script src=https://cdn.rawgit.com/imakewebthings/waypoints/79903c88ed2564b6df6fb850e8430f1f68fa7f1e/lib/noframework.waypoints.min.js></script>
+<style>
+pre {
+  white-space: pre-wrap;
+  background-color: #4B2222;
+}
+.code-placeholder { min-height: 300px; }
+.code-title {
+  text-align: center;
+}
+.code-block {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.code-block h4 { text-align: center; }
+small a { text-decoration: none; color: gray; font-size: 80%; }
+</style>
 <script>
 $(function () {
   $(".code-placeholder").each(function () {
@@ -47,6 +66,9 @@ $(function () {
 
 {{#Tasks}}
   <div class=code-placeholder data-task="{{Href}}">
-    <h3 class=code-title id={{Href}}><a href="#{{Href}}">{{Name}}</a></h3>
+    <h3 class=code-title id={{Href}}>
+      <a href="#{{Href}}">{{Name}}</a>
+      <small><a href="http://rosettacode.org/wiki/{{Href}}" target="_blank">(see task description)</a></small>
+    </h3>
   </div>
 {{/Tasks}}
