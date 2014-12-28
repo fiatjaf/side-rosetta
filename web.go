@@ -14,6 +14,24 @@ import (
 	"strings"
 )
 
+func index(w http.ResponseWriter, req *http.Request) {
+	var content []byte
+	content, _ = ioutil.ReadFile("languages.json")
+	languages := make([]string, 0)
+	if err := json.Unmarshal(content, &languages); err != nil {
+		log.Print(err)
+		http.Error(w, "internal json parsing error", 505)
+		return
+	}
+
+	context := Context{Languages: languages}
+	html := mustache.RenderFile("index.html", context)
+
+	headerBytes, _ := ioutil.ReadFile("header.html")
+	header := string(headerBytes)
+	fmt.Fprintf(w, header+"\n"+html)
+}
+
 func languages(w http.ResponseWriter, req *http.Request) {
 	params := mux.Vars(req)
 	log.Print(params)
@@ -27,12 +45,11 @@ func languages(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	headerBytes, _ := ioutil.ReadFile("header.html")
-	header := string(headerBytes)
-
 	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
 	html := mustache.RenderFile("tasks.html", context)
 
+	headerBytes, _ := ioutil.ReadFile("header.html")
+	header := string(headerBytes)
 	fmt.Fprintf(w, header+"\n"+html)
 }
 
@@ -98,13 +115,15 @@ func redirectToSlash(w http.ResponseWriter, req *http.Request) {
 }
 
 type Context struct {
-	Lang1 string
-	Lang2 string
-	Tasks []map[string]string
+	Lang1     string
+	Lang2     string
+	Tasks     []map[string]string
+	Languages []string
 }
 
 func main() {
 	router := mux.NewRouter()
+	router.HandleFunc("/", index)
 	router.HandleFunc("/compare/{lang1}/{lang2}/", languages)
 	router.HandleFunc("/compare/{lang1}/{lang2}", redirectToSlash)
 	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}/", codeblocks)
