@@ -86,7 +86,7 @@ func CodeblockForTask(taskName string, langs map[int]string) (code map[int]strin
 				return true
 			}
 			html = sanitize.HTML(html)
-			code[matching] = code[matching] + "<pre><code class=\"language-" + langs[matching] + "\">" + html + "</code></pre>"
+			code[matching] += "<pre><code class=\"language-" + langs[matching] + "\">" + html + "</code></pre>"
 		}
 
 		return true

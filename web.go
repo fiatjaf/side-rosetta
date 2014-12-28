@@ -91,7 +91,7 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 			for i := 1; i <= 2; i++ {
 				html, _, _, err := memcache.Get(taskName + "::" + langs[i])
 				if err == nil && html != "" {
-					code[i] = "<pre><code class=\"language-" + langs[i] + "\">" + html + "</code></pre>"
+					code[i] += "<pre><code class=\"language-" + langs[i] + "\">" + html + "</code></pre>"
 				}
 			}
 		}

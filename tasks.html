@@ -1,15 +1,13 @@
 <link href=https://cdn.rawgit.com/LeaVerou/prism/e262ba89ccd3cae472fde2189d91f28eb8167fc5/themes/prism-okaidia.css rel=stylesheet>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.min.js></script>
-<script src=https://cdn.rawgit.com/imakewebthings/waypoints/79903c88ed2564b6df6fb850e8430f1f68fa7f1e/lib/noframework.waypoints.min.js></script>
+<link href=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css rel=stylesheet>
+<script data-manual src=//cdnjs.cloudflare.com/ajax/libs/prism/0.0.1/prism.js></script>
+<script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js></script>
+<script src=//cdn.rawgit.com/imakewebthings/waypoints/79903c88ed2564b6df6fb850e8430f1f68fa7f1e/lib/noframework.waypoints.min.js></script>
 <style>
-pre {
-  white-space: pre-wrap;
-  background-color: #4B2222;
-}
+pre { white-space: pre-wrap; }
+pre.nohighlight { background-color: #4B2222; }
 .code-placeholder { min-height: 300px; }
-.code-title {
-  text-align: center;
-}
+.code-title { text-align: center; }
 .code-block {
   padding-left: 20px;
   padding-right: 20px;
@@ -33,9 +31,36 @@ $(function () {
               $placeholder.before($placeholder.find('h3'))
               var codeblock = $(html)
               $placeholder.replaceWith(codeblock)
+
               codeblock.find('code').each(function (_, code) {
-                Prism.highlightElement(code)
+                var $code = $(code)
+
+                // unwrap the element from the set of <pre><code> it might be in
+                var $pre = $code.parent()
+                while ($pre.parent()[0].tagName != 'DIV') {
+                  $pre.unwrap()
+                }
               })
+
+              codeblock.find('code').each(function (_, code) {
+                var $code = $(code)
+                // syntax highlighting with prism
+                Prism.highlightElement(code)
+
+                // syntax highlighting with highlightjs
+                var lang = $code.data('language')
+                if (!lang) {
+                  $code.attr('class', 'lang-' + $code.attr('class').trim().split('-')[1])
+                  
+                  hljs.highlightBlock(code)
+                }
+
+                // add the brown background when no syntax highlighting was found
+                if (!lang && !$code.hasClass('hljs')) {
+                  $code.parent().addClass('nohighlight')
+                }
+              })
+                
               var lang1 = '{{ .Lang1 }}'[0].toUpperCase() + '{{ .Lang1 }}'.substr(1)
               var lang2 = '{{ .Lang2 }}'[0].toUpperCase() + '{{ .Lang2 }}'.substr(1)
               codeblock.find('.code-lang1').prepend('<h4>' + lang1 + '</h4>')
