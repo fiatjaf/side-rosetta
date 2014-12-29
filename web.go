@@ -131,6 +131,11 @@ func redirectToSlash(w http.ResponseWriter, req *http.Request) {
 	return
 }
 
+func redirectToHome(w http.ResponseWriter, req *http.Request) {
+	http.Redirect(w, req, "/", 302)
+	return
+}
+
 type Context struct {
 	Lang1     string
 	Lang2     string
@@ -141,6 +146,8 @@ type Context struct {
 func main() {
 	router := mux.NewRouter()
 	router.HandleFunc("/", index)
+	router.HandleFunc("/compare/", redirectToHome)
+	router.HandleFunc("/compare", redirectToHome)
 	router.HandleFunc("/compare/{lang1}/{lang2}/", languages)
 	router.HandleFunc("/compare/{lang1}/{lang2}", redirectToSlash)
 	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}/", codeblocks)
