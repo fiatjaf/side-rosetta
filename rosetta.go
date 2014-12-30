@@ -4,6 +4,7 @@ import (
 	"github.com/PuerkitoBio/goquery"
 	"github.com/kennygrant/sanitize"
 	"net/http"
+	"net/url"
 	"strings"
 )
 
@@ -45,9 +46,14 @@ func TasksForLanguage(lang string) (tasks []map[string]string, err error) {
 	doc.Find("#mw-pages a").Each(func(i int, s *goquery.Selection) {
 		href, exists := s.Attr("href")
 		if exists {
-			path := strings.Split(strings.Trim(href, "/"), "/")
-			href = path[len(path)-1]
-			tasks = append(tasks, map[string]string{"Href": href, "Name": s.Text()})
+			parsedHref, err := url.Parse(href)
+			if err != nil {
+				return
+			}
+			tasks = append(tasks, map[string]string{
+				"Href": strings.SplitN(parsedHref.Path, "/", 3)[2],
+				"Name": s.Text(),
+			})
 		}
 	})
 

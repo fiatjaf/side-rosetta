@@ -77,6 +77,9 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	params := mux.Vars(req)
 	log.Print(params)
 	taskName := params["taskName"]
+	if taskGroup, ok := params["taskGroup"]; ok {
+		taskName = taskGroup + "/" + taskName
+	}
 
 	lang1 := strings.ToLower(params["lang1"])
 	lang2 := strings.ToLower(params["lang2"])
@@ -152,6 +155,8 @@ func main() {
 	router.HandleFunc("/compare/{lang1}/{lang2}", redirectToSlash)
 	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}/", codeblocks)
 	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}", redirectToSlash)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}/", codeblocks)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}", redirectToSlash)
 	http.Handle("/", router)
 
 	port := os.Getenv("PORT")
