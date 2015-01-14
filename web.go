@@ -2,7 +2,6 @@ package main
 
 import (
 	"encoding/json"
-	"fmt"
 	"github.com/bmizerany/mc"
 	"github.com/gorilla/mux"
 	"io/ioutil"
@@ -23,9 +22,12 @@ func index(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	headerBytes, _ := ioutil.ReadFile("header.html")
-	header := string(headerBytes)
-	fmt.Fprintf(w, header)
+	headerC := Context{Title: "Side-by-side programming languages comparisons"}
+	headerT, err := template.ParseFiles("header.html")
+	if err != nil {
+		log.Print(err)
+	}
+	headerT.Execute(w, headerC)
 
 	context := Context{Languages: languages}
 	t, err := template.ParseFiles("index.html")
@@ -61,9 +63,12 @@ func languages(w http.ResponseWriter, req *http.Request) {
 	// cache this, please
 	w.Header().Set("Cache-control", "public; max-age=5184000")
 
-	headerBytes, _ := ioutil.ReadFile("header.html")
-	header := string(headerBytes)
-	fmt.Fprintf(w, header)
+	headerC := Context{Title: strings.Title(langs[1]) + " x " + strings.Title(langs[2]) + " side-by-side"}
+	headerT, err := template.ParseFiles("header.html")
+	if err != nil {
+		log.Print(err)
+	}
+	headerT.Execute(w, headerC)
 
 	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
 	t, err := template.ParseFiles("tasks.html")
@@ -140,6 +145,7 @@ func redirectToHome(w http.ResponseWriter, req *http.Request) {
 }
 
 type Context struct {
+	Title     string
 	Lang1     string
 	Lang2     string
 	Tasks     []map[string]string
