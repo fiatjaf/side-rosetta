@@ -16,6 +16,9 @@ pre.nohighlight { background-color: #4B2222; }
 small a { text-decoration: none; color: gray; font-size: 80%; }
 </style>
 <script>
+ga('send', 'event', 'language', '{{ .Lang1 }}')
+ga('send', 'event', 'language', '{{ .Lang2 }}')
+
 $(function () {
   $(".code-placeholder").each(function () {
     new Waypoint({
@@ -89,11 +92,14 @@ $(function () {
 })
 </script>
 
+<h4 style="text-align: right;">
+  <a href="/" style="color: #BB3232">Select other languages</a>
+</h4>
+
 {{ range .Tasks }}
-  <div class=code-placeholder data-task="{{ .Href }}">
-    <h3 class=code-title id={{ .Href }}>
-      <a href="#{{ .Href }}">{{ .Name }}</a>
-      <small><a href="http://rosettacode.org/wiki/{{ .Href }}" target="_blank">(see task description)</a></small>
-    </h3>
-  </div>
+<div class=code-placeholder data-task="{{ .Href }}">
+  <h3 class=code-title id={{ .Href }}>
+    <a href="#{{ .Href }}">{{ .Name }}</a><small><a href="http://rosettacode.org/wiki/{{ .Href }}" target="_blank">(see task description)</a></small>
+  </h3>
+</div>
 {{ end }}
