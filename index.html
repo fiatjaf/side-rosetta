@@ -5,6 +5,42 @@ li { float: left; padding: 10px; }
 .btn-lg { font-size: 130%; }
 h1 { text-align: center; }
 footer { width: 100%; text-align: center; background-color: wheat; padding-top: 20px; overflow: auto; }
+
+#banner {
+  position: fixed;
+  right: 40px;
+  top: 70px;
+  width: 200px;
+  text-align: center;
+  font-size: 1.6em;
+  background: linen;
+  padding: 12px;
+  border-radius: 12px;
+
+  display: none;
+}
+#banner img[src*="chrome"] {
+  width: 100%;
+}
+#banner:hover {
+  border: 7px solid blanchedalmond;
+  width: 207px;
+  right: 33px;
+  z-index: 12;
+}
+
+@media (min-width: 1266px) {
+  #banner { display: block; }
+  body > .container {
+    position: relative;
+    left: -80px;
+  }
+}
+@media (min-width: 1450px) {
+  body > .container {
+    position: static;
+  }
+}
 </style>
 <div class="container">
   <div class="jumbotron">
@@ -23,6 +59,14 @@ footer { width: 100%; text-align: center; background-color: wheat; padding-top: 
   <div class="jumbotron">
     <a href="#" class="btn btn-primary btn-lg btn-block">Compare <span></span> and <span></span></a>
   </div>
+</div>
+
+<div id="banner">
+  <div><a href="http://fiatjaf.alhur.es/module-linker/"><img src="https://cdn.rawgit.com/fiatjaf/module-linker/9642896a/icon64.png"></a></div>
+  <p>Are you fighting against source code on the internet?</p>
+  <p>Try <a href="http://fiatjaf.alhur.es/module-linker/" target="_blank">Module Linker</a>, a Chrome Extension that allows you to click through module import declarations on GitHub!</p>
+  <div><a href="https://chrome.google.com/webstore/detail/dglofghjinifeolcpjfjmfdnnbaanggn" target="_blank"><img src="https://cdn.rawgit.com/fiatjaf/module-linker/gh-pages/chrome-button.png"></a>
+</div>
 </div>
 
 <script>
