@@ -1,3 +1,5 @@
 *.swo
 *.swp
 .env
+bindata.go
+rosetta.alhur.es

@@ -2,19 +2,19 @@ package main
 
 import (
 	"encoding/json"
-	"github.com/bmizerany/mc"
-	"github.com/gorilla/mux"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"os"
 	"strings"
 	"text/template"
+
+	"github.com/bmizerany/mc"
+	"github.com/gorilla/mux"
 )
 
 func index(w http.ResponseWriter, req *http.Request) {
 	var content []byte
-	content, _ = ioutil.ReadFile("languages.json")
+	content, _ = Asset("static/languages.json")
 	languages := make([]string, 0)
 	if err := json.Unmarshal(content, &languages); err != nil {
 		log.Print(err)
@@ -23,17 +23,13 @@ func index(w http.ResponseWriter, req *http.Request) {
 	}
 
 	headerC := Context{Title: "Side-by-side programming languages comparisons"}
-	headerT, err := template.ParseFiles("header.html")
-	if err != nil {
-		log.Print(err)
-	}
+	headerbytes, _ := Asset("static/header.html")
+	headerT := template.Must(template.New("header").Parse(string(headerbytes)))
 	headerT.Execute(w, headerC)
 
 	context := Context{Languages: languages}
-	t, err := template.ParseFiles("index.html")
-	if err != nil {
-		log.Print(err)
-	}
+	indexbytes, _ := Asset("static/index.html")
+	t := template.Must(template.New("index").Parse(string(indexbytes)))
 	t.Execute(w, context)
 }
 
@@ -52,7 +48,7 @@ func languages(w http.ResponseWriter, req *http.Request) {
 		// if nothing was found, return all
 		tasks := make([]map[string]string, 0)
 		var content []byte
-		content, _ = ioutil.ReadFile("tasks.json")
+		content, _ = Asset("static/tasks.json")
 		if err := json.Unmarshal(content, &tasks); err != nil {
 			log.Print(err)
 			http.Error(w, "internal json parsing error", 505)
@@ -64,17 +60,13 @@ func languages(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Cache-control", "public; max-age=5184000")
 
 	headerC := Context{Title: strings.Title(langs[1]) + " x " + strings.Title(langs[2]) + " side-by-side"}
-	headerT, err := template.ParseFiles("header.html")
-	if err != nil {
-		log.Print(err)
-	}
+	headerbytes, _ := Asset("static/header.html")
+	headerT := template.Must(template.New("header").Parse(string(headerbytes)))
 	headerT.Execute(w, headerC)
 
 	context := Context{Lang1: params["lang1"], Lang2: params["lang2"], Tasks: tasks}
-	t, err := template.ParseFiles("tasks.html")
-	if err != nil {
-		log.Print(err)
-	}
+	tasksbytes, _ := Asset("static/tasks.html")
+	t := template.Must(template.New("tasks").Parse(string(tasksbytes)))
 	t.Execute(w, context)
 }
 
@@ -127,10 +119,8 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	w.Header().Set("Cache-control", "public; max-age=5184000")
 
 	context := Context{Lang1: code[1], Lang2: code[2]}
-	t, err := template.ParseFiles("codeblock.html")
-	if err != nil {
-		log.Print(err)
-	}
+	codeblockbytes, _ := Asset("static/codeblock.html")
+	t := template.Must(template.New("codeblock").Parse(string(codeblockbytes)))
 	t.Execute(w, context)
 }
 
