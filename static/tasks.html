@@ -96,7 +96,7 @@ $(function () {
 {{ range .Tasks }}
 <div class=code-placeholder data-task="{{ .Href }}">
   <h3 class=code-title id={{ .Href }}>
-    <a href="#{{ .Href }}">{{ .Name }}</a><small><a href="http://rosettacode.org/wiki/{{ .Href }}" target="_blank">(see task description)</a></small>
+    <a href="#{{ .Href }}">{{ .Name }}</a> <small><a href="http://rosettacode.org/wiki/{{ .Href }}" target="_blank">(see task description)</a></small>
   </h3>
 </div>
 {{ end }}

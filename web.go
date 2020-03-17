@@ -12,6 +12,40 @@ import (
 	"github.com/gorilla/mux"
 )
 
+var memcached *mc.Conn
+var err error
+
+func main() {
+	if m, err := mc.Dial("tcp", os.Getenv("MEMCACHEDCLOUD_SERVERS")); err == nil {
+		err := m.Auth(
+			os.Getenv("MEMCACHEDCLOUD_USERNAME"),
+			os.Getenv("MEMCACHEDCLOUD_PASSWORD"),
+		)
+		if err == nil {
+			memcached = m
+		}
+	}
+
+	router := mux.NewRouter()
+	router.HandleFunc("/", index)
+	router.HandleFunc("/compare/", redirectToHome)
+	router.HandleFunc("/compare", redirectToHome)
+	router.HandleFunc("/compare/{lang1}/{lang2}/", languages)
+	router.HandleFunc("/compare/{lang1}/{lang2}", redirectToSlash)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}/", codeblocks)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}", redirectToSlash)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}/", codeblocks)
+	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}", redirectToSlash)
+	http.Handle("/", router)
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "5000"
+	}
+	log.Print("listening...")
+	http.ListenAndServe(":"+port, nil)
+}
+
 func index(w http.ResponseWriter, req *http.Request) {
 	var content []byte
 	content, _ = Asset("static/languages.json")
@@ -84,15 +118,11 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	code := map[int]string{1: "", 2: ""}
 
 	// try to found the code in memcache
-	memcache, err := mc.Dial("tcp", os.Getenv("MEMCACHEDCLOUD_SERVERS"))
-	if err == nil {
-		err = memcache.Auth(os.Getenv("MEMCACHEDCLOUD_USERNAME"), os.Getenv("MEMCACHEDCLOUD_PASSWORD"))
-		if err == nil {
-			for i := 1; i <= 2; i++ {
-				html, _, _, err := memcache.Get(taskName + "::" + langs[i])
-				if err == nil && html != "" {
-					code[i] += "<pre><code class=\"language-" + langs[i] + "\">" + html + "</code></pre>"
-				}
+	if memcached != nil {
+		for i := 1; i <= 2; i++ {
+			html, _, _, err := memcached.Get(taskName + "::" + langs[i])
+			if err == nil && html != "" {
+				code[i] += "<pre><code class=\"language-" + langs[i] + "\">" + html + "</code></pre>"
 			}
 		}
 	}
@@ -112,8 +142,10 @@ func codeblocks(w http.ResponseWriter, req *http.Request) {
 	}
 
 	// save code for this task in memcached
-	memcache.Set(taskName+"::"+langs[1], code[1], 0, 0, 1296000)
-	memcache.Set(taskName+"::"+langs[2], code[2], 0, 0, 1296000)
+	if memcached != nil {
+		memcached.Set(taskName+"::"+langs[1], code[1], 0, 0, 1296000)
+		memcached.Set(taskName+"::"+langs[2], code[2], 0, 0, 1296000)
+	}
 
 	// cache this, please
 	w.Header().Set("Cache-control", "public; max-age=5184000")
@@ -140,25 +172,4 @@ type Context struct {
 	Lang2     string
 	Tasks     []map[string]string
 	Languages []string
-}
-
-func main() {
-	router := mux.NewRouter()
-	router.HandleFunc("/", index)
-	router.HandleFunc("/compare/", redirectToHome)
-	router.HandleFunc("/compare", redirectToHome)
-	router.HandleFunc("/compare/{lang1}/{lang2}/", languages)
-	router.HandleFunc("/compare/{lang1}/{lang2}", redirectToSlash)
-	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}/", codeblocks)
-	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskName}", redirectToSlash)
-	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}/", codeblocks)
-	router.HandleFunc("/codeblock/{lang1}/{lang2}/{taskGroup}/{taskName}", redirectToSlash)
-	http.Handle("/", router)
-
-	port := os.Getenv("PORT")
-	if port == "" {
-		port = "5000"
-	}
-	log.Print("listening...")
-	http.ListenAndServe(":"+port, nil)
 }
